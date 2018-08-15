@@ -1,0 +1,9 @@
+C:\Users\Asus\Documents\Visual Studio 2017\Projects\Zircon\Zircon.Models\bin\Debug\netcoreapp2.1\Zircon.Models.deps.json
+C:\Users\Asus\Documents\Visual Studio 2017\Projects\Zircon\Zircon.Models\bin\Debug\netcoreapp2.1\Zircon.Models.dll
+C:\Users\Asus\Documents\Visual Studio 2017\Projects\Zircon\Zircon.Models\bin\Debug\netcoreapp2.1\Zircon.Models.pdb
+C:\Users\Asus\Documents\Visual Studio 2017\Projects\Zircon\Zircon.Models\obj\Debug\netcoreapp2.1\Zircon.Models.csprojAssemblyReference.cache
+C:\Users\Asus\Documents\Visual Studio 2017\Projects\Zircon\Zircon.Models\obj\Debug\netcoreapp2.1\Zircon.Models.csproj.CoreCompileInputs.cache
+C:\Users\Asus\Documents\Visual Studio 2017\Projects\Zircon\Zircon.Models\obj\Debug\netcoreapp2.1\Zircon.Models.AssemblyInfoInputs.cache
+C:\Users\Asus\Documents\Visual Studio 2017\Projects\Zircon\Zircon.Models\obj\Debug\netcoreapp2.1\Zircon.Models.AssemblyInfo.cs
+C:\Users\Asus\Documents\Visual Studio 2017\Projects\Zircon\Zircon.Models\obj\Debug\netcoreapp2.1\Zircon.Models.dll
+C:\Users\Asus\Documents\Visual Studio 2017\Projects\Zircon\Zircon.Models\obj\Debug\netcoreapp2.1\Zircon.Models.pdb
