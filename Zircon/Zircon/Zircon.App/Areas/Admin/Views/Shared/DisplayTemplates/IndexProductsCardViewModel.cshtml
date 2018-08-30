@@ -1,0 +1,13 @@
+﻿@model IndexProductsCardViewModel
+
+<div class="col-sm-4" style="padding-bottom: 20px">
+    <div class="card" style="width: 18rem;">
+        <img class="card-img-top" src="@Model.PictureUrl" alt="@Model.Name">
+        <div class="card-body">
+            <h5 class="card-title">@Model.Name</h5>
+            <p class="card-text">@Model.Price Lv.</p>
+            <p class="card-text">@Model.Category</p>
+            <a asp-page="/products/details" asp-route-id="@Model.Id" class="btn btn-primary">Details</a>
+        </div>
+    </div>
+</div>

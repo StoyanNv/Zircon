@@ -1,0 +1,22 @@
+﻿@model AddProductBindingModel
+<form asp-area="Admin" asp-controller="Products" asp-action="Add" method="post" class="form-horizontal">
+    <div class="form-group">
+        <label asp-for="CategoryId" class="control-label col-sm-2"></label>
+        <div class="col-sm-10">
+            @Html.DropDownList("CategoryId", Model.Categories, null, new { @class = "form-control" })
+            <span class="text-danger" asp-validation-for="CategoryId"></span>
+        </div>
+    </div>
+    @Html.FormGroupFor(model => model.Name)
+    @Html.FormGroupFor(model => model.Price)
+    @Html.FormGroupFor(model => model.PictureUrl)
+    <div class="form-group">
+        <div class="col-sm-10 col-sm-push-2">
+            <input type="submit" value="Create" class="btn btn-success" />
+            <a asp-area="Admin" asp-controller="Home" asp-action="Index" class="btn bg-warning btn-default">Cancel</a>
+        </div>
+    </div>
+</form>
+@section Scripts{
+    <partial name="_ValidationScriptsPartial" />
+}

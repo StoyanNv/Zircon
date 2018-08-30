@@ -1,0 +1,7 @@
+﻿@model ShopingCartViewModel
+
+<tr>
+    <td>@Model.Name</td>
+    <td>@Model.Price Lv.</td>
+    <td><a class="btn btn-danger" asp-controller="Cart" asp-action="RemoveFromCart" asp-route-productId="@Model.Id">X</a></td>
+</tr>

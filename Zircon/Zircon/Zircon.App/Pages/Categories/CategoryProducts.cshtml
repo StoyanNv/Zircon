@@ -1,0 +1,11 @@
+﻿@page "{id}"
+@model Zircon.App.Pages.Categories.CategoryProductsModel
+@{
+    ViewData["Title"] = "Category Products";
+}
+
+<h2>@ViewData["Title"]</h2>
+
+<div class="row">
+    @Html.DisplayFor(model => model.AllProducts)
+</div>

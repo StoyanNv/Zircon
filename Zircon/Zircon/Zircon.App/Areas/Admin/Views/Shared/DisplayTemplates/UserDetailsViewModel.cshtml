@@ -1,0 +1,23 @@
+﻿@model UserDetailsViewModel
+
+<p><strong>Email:</strong> <a href="mailto://@Model.Username">@Model.Username</a></p>
+<p><strong>Name:</strong> @Model.Name</p>
+<p><strong>Surname:</strong> @Model.Surname</p>
+
+<p><strong>District:</strong> @Model.District</p>
+<p><strong>Town:</strong> @Model.Town</p>
+
+<p><strong>Street:</strong> @Model.Street</p>
+<p><strong>Number:</strong> @Model.Number</p>
+
+<p><strong>Postcode:</strong> @Model.Postcode</p>
+
+<p><strong>Floor:</strong> @Model.Floor</p>
+<p><strong>Block:</strong> @Model.Block</p>
+
+<p><strong>Apartment:</strong> @Model.Apartment</p>
+<p><strong>Bell:</strong> @Model.Bell</p>
+
+@section Scripts{
+    <partial name="_ValidationScriptsPartial" />
+}

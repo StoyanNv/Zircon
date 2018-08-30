@@ -1,0 +1,14 @@
+﻿@model AddGiftCardBindingModel
+@{
+    ViewData["Title"] = "AddGiftCardBindingModel";
+}
+<form method="post">
+    @Html.FormGroupFor(model => model.Code)
+    @Html.FormGroupFor(model => model.Discount)
+    <div class="form-group">
+        <div class="col-sm-10 col-sm-push-2">
+            <input type="submit" value="Create" class="btn btn-success"/>
+            <a asp-area="Admin" asp-controller="Home" asp-action="Index" class="btn bg-warning btn-default">Cancel</a>
+        </div>
+    </div>
+</form>
