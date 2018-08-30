@@ -1,18 +1,25 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Diagnostics;
-using System.Linq;
+﻿using System.Diagnostics;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
 using Zircon.App.Models;
+using Zircon.Services.UserServices.Interfaces;
 
 namespace Zircon.App.Controllers
 {
     public class HomeController : Controller
     {
-        public IActionResult Index()
+        private IUserProductDetailsService userProductDetails;
+
+        public HomeController(IUserProductDetailsService userProductDetails)
         {
-            return View();
+            this.userProductDetails = userProductDetails;
+        }
+
+        public async Task<IActionResult> Index()
+        {
+            var model = await userProductDetails.GetProductsAsync();
+
+            return View(model);
         }
 
         public IActionResult About()

@@ -1313,6 +1313,9 @@
       "Zircon.Models/1.0.0": {
         "type": "project",
         "framework": ".NETCoreApp,Version=v2.1",
+        "dependencies": {
+          "Microsoft.AspNetCore.Identity.EntityFrameworkCore": "2.1.0"
+        },
         "compile": {
           "bin/placeholder/Zircon.Models.dll": {}
         },
@@ -4310,23 +4313,23 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\Asus\\.nuget\\packages\\": {},
+    "C:\\Users\\User\\.nuget\\packages\\": {},
     "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Asus\\Documents\\Visual Studio 2017\\Projects\\Zircon\\Zircon.Data\\Zircon.Data.csproj",
+      "projectUniqueName": "D:\\Zircon\\Zircon\\Zircon.Data\\Zircon.Data.csproj",
       "projectName": "Zircon.Data",
-      "projectPath": "C:\\Users\\Asus\\Documents\\Visual Studio 2017\\Projects\\Zircon\\Zircon.Data\\Zircon.Data.csproj",
-      "packagesPath": "C:\\Users\\Asus\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Asus\\Documents\\Visual Studio 2017\\Projects\\Zircon\\Zircon.Data\\obj\\",
+      "projectPath": "D:\\Zircon\\Zircon\\Zircon.Data\\Zircon.Data.csproj",
+      "packagesPath": "C:\\Users\\User\\.nuget\\packages\\",
+      "outputPath": "D:\\Zircon\\Zircon\\Zircon.Data\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
       ],
       "configFilePaths": [
-        "C:\\Users\\Asus\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\User\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -4339,8 +4342,8 @@
       "frameworks": {
         "netcoreapp2.1": {
           "projectReferences": {
-            "C:\\Users\\Asus\\Documents\\Visual Studio 2017\\Projects\\Zircon\\Zircon.Models\\Zircon.Models.csproj": {
-              "projectPath": "C:\\Users\\Asus\\Documents\\Visual Studio 2017\\Projects\\Zircon\\Zircon.Models\\Zircon.Models.csproj"
+            "D:\\Zircon\\Zircon\\Zircon.Models\\Zircon.Models.csproj": {
+              "projectPath": "D:\\Zircon\\Zircon\\Zircon.Models\\Zircon.Models.csproj"
             }
           }
         }
