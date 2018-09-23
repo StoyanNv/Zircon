@@ -1,11 +1,11 @@
-﻿using System.Diagnostics;
-using System.Threading.Tasks;
-using Microsoft.AspNetCore.Mvc;
-using Zircon.App.Models;
-using Zircon.Services.UserServices.Interfaces;
-
-namespace Zircon.App.Controllers
+﻿namespace Zircon.App.Controllers
 {
+    using Microsoft.AspNetCore.Mvc;
+    using Models;
+    using Services.UserServices.Interfaces;
+    using System.Diagnostics;
+    using System.Threading.Tasks;
+
     public class HomeController : Controller
     {
         private IUserProductDetailsService userProductDetails;

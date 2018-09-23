@@ -1,26 +1,26 @@
-﻿using AutoMapper;
-using Microsoft.AspNetCore.Builder;
-using Microsoft.AspNetCore.Hosting;
-using Microsoft.AspNetCore.Http;
-using Microsoft.AspNetCore.Identity;
-using Microsoft.AspNetCore.Identity.UI.Services;
-using Microsoft.AspNetCore.Mvc;
-using Microsoft.EntityFrameworkCore;
-using Microsoft.Extensions.Configuration;
-using Microsoft.Extensions.DependencyInjection;
-using System.Reflection;
-using Zircon.App.Areas.Identity.Services;
-using Zircon.App.Common;
-using Zircon.Data;
-using Zircon.Models;
-using Zircon.Services.Admin;
-using Zircon.Services.Admin.Interfaces;
-using Zircon.Services.Mapping;
-using Zircon.Services.UserServices;
-using Zircon.Services.UserServices.Interfaces;
-
-namespace Zircon.App
+﻿namespace Zircon.App
 {
+    using AutoMapper;
+    using Common;
+    using Data;
+    using Microsoft.AspNetCore.Builder;
+    using Microsoft.AspNetCore.Hosting;
+    using Microsoft.AspNetCore.Http;
+    using Microsoft.AspNetCore.Identity;
+    using Microsoft.AspNetCore.Identity.UI.Services;
+    using Microsoft.AspNetCore.Mvc;
+    using Microsoft.EntityFrameworkCore;
+    using Microsoft.Extensions.Configuration;
+    using Microsoft.Extensions.DependencyInjection;
+    using Services.Admin;
+    using Services.Admin.Interfaces;
+    using Services.Mapping;
+    using Services.UserServices;
+    using Services.UserServices.Interfaces;
+    using System.Reflection;
+    using Zircon.App.Areas.Identity.Services;
+    using Zircon.Models;
+
     public class Startup
     {
         public Startup(IConfiguration configuration)

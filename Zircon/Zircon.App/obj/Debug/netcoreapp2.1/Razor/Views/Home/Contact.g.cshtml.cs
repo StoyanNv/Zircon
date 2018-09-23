@@ -39,12 +39,12 @@ using Zircon.Common.User.ViewModels;
 #line default
 #line hidden
 #line 6 "D:\Zircon\Zircon\Zircon.App\Views\_ViewImports.cshtml"
-using Zircon.App.Helpers;
+using Zircon.App.Helpers.Messages;
 
 #line default
 #line hidden
     [global::Microsoft.AspNetCore.Razor.Hosting.RazorSourceChecksumAttribute(@"SHA1", @"b93df4061ff384cf01ca37cf92dff41c251f235f", @"/Views/Home/Contact.cshtml")]
-    [global::Microsoft.AspNetCore.Razor.Hosting.RazorSourceChecksumAttribute(@"SHA1", @"7da47c20cbc0b1cf09ec95f59cb232dc31c6477f", @"/Views/_ViewImports.cshtml")]
+    [global::Microsoft.AspNetCore.Razor.Hosting.RazorSourceChecksumAttribute(@"SHA1", @"89aa57cc3a9db051570bccff0cfaceca3085d600", @"/Views/_ViewImports.cshtml")]
     public class Views_Home_Contact : global::Microsoft.AspNetCore.Mvc.Razor.RazorPage<dynamic>
     {
         #pragma warning disable 1998

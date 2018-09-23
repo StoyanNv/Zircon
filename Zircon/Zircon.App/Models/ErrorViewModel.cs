@@ -1,5 +1,3 @@
-using System;
-
 namespace Zircon.App.Models
 {
     public class ErrorViewModel

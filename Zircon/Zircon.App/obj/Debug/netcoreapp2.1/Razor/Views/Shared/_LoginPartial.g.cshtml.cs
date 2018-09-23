@@ -39,12 +39,12 @@ using Zircon.Common.User.ViewModels;
 #line default
 #line hidden
 #line 6 "D:\Zircon\Zircon\Zircon.App\Views\_ViewImports.cshtml"
-using Zircon.App.Helpers;
+using Zircon.App.Helpers.Messages;
 
 #line default
 #line hidden
     [global::Microsoft.AspNetCore.Razor.Hosting.RazorSourceChecksumAttribute(@"SHA1", @"87b22afb3ce8244a37a73205be31897a0510f9f0", @"/Views/Shared/_LoginPartial.cshtml")]
-    [global::Microsoft.AspNetCore.Razor.Hosting.RazorSourceChecksumAttribute(@"SHA1", @"7da47c20cbc0b1cf09ec95f59cb232dc31c6477f", @"/Views/_ViewImports.cshtml")]
+    [global::Microsoft.AspNetCore.Razor.Hosting.RazorSourceChecksumAttribute(@"SHA1", @"89aa57cc3a9db051570bccff0cfaceca3085d600", @"/Views/_ViewImports.cshtml")]
     public class Views_Shared__LoginPartial : global::Microsoft.AspNetCore.Mvc.Razor.RazorPage<dynamic>
     {
         private static readonly global::Microsoft.AspNetCore.Razor.TagHelpers.TagHelperAttribute __tagHelperAttribute_0 = new global::Microsoft.AspNetCore.Razor.TagHelpers.TagHelperAttribute("asp-area", "Identity", global::Microsoft.AspNetCore.Razor.TagHelpers.HtmlAttributeValueStyle.DoubleQuotes);
@@ -97,12 +97,12 @@ using Zircon.App.Helpers;
             WriteLiteral("    ");
             EndContext();
             BeginContext(169, 583, false);
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("form", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "072c6cb2ac4542d19001d2014bd1cfda", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("form", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "1a1ea6c68e444ca5b8e899fa267d9eee", async() => {
                 BeginContext(377, 77, true);
                 WriteLiteral("\r\n        <ul class=\"navbar-nav ml-auto\">\r\n            <li>\r\n                ");
                 EndContext();
                 BeginContext(454, 129, false);
-                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "7bc6a60278bf4f058042a7decc4f139c", async() => {
+                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "739e9fbc345943e5aabdefe912bcc095", async() => {
                     BeginContext(542, 6, true);
                     WriteLiteral("Hello ");
                     EndContext();
@@ -186,7 +186,7 @@ else
             WriteLiteral("    <ul class=\"navbar-nav ml-auto\">\r\n        <li>");
             EndContext();
             BeginContext(815, 81, false);
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "4ff4646056de44908a08fa8adc91a4d2", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "ea5480085cee43a29c8f9fdbcfa012ee", async() => {
                 BeginContext(884, 8, true);
                 WriteLiteral("Register");
                 EndContext();
@@ -211,7 +211,7 @@ else
             WriteLiteral("</li>\r\n        <li>");
             EndContext();
             BeginContext(915, 75, false);
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "8f6fdb9edbe845fa9104814118af9d6e", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "717e46e763984d8caa16b9f29fc8ecbc", async() => {
                 BeginContext(981, 5, true);
                 WriteLiteral("Login");
                 EndContext();

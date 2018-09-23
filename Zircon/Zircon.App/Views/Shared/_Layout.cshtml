@@ -48,6 +48,16 @@
     <partial name="_CookieConsentPartial" />
 
     <div class="container body-content">
+        @*@if (TempData.ContainsKey("__Message"))
+        {
+            var message = (MessageModel)TempData["__Message"];
+            <message type="@message.Type" message="@message.Message"></message>
+        }*@
+        @if (TempData.ContainsKey("__MessageType"))
+        {
+            Enum.TryParse(@TempData["__MessageType"].ToString(), out MessageType type);
+            <message type=@type message="@TempData["__MessageText"]"></message>
+        }
         @RenderBody()
         <hr />
         <footer>

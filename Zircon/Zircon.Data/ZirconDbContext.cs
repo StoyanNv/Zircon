@@ -1,9 +1,9 @@
-﻿using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
-using Microsoft.EntityFrameworkCore;
-using Zircon.Models;
-
-namespace Zircon.Data
+﻿namespace Zircon.Data
 {
+    using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
+    using Microsoft.EntityFrameworkCore;
+    using Models;
+
     public class ZirconDbContext : IdentityDbContext<User>
     {
         public DbSet<Address> Addresses { get; set; }
