@@ -19,8 +19,12 @@
         public string PictureUrl { get; set; }
 
         [Required]
-        [Range(0.1, Double.MaxValue)]
+        [Range(0.1, double.MaxValue)]
         public decimal Price { get; set; }
+
+        [Required]
+        [Range(0.1, Double.MaxValue)]
+        public double Weight { get; set; }
 
         [Required]
         public Category Category { get; set; }

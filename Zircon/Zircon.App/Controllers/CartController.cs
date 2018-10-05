@@ -9,6 +9,7 @@
     using System.Collections.Generic;
     using System.Linq;
     using System.Threading.Tasks;
+    using Zircon.Common;
     using Zircon.Models;
 
     public class CartController : Controller
@@ -38,23 +39,23 @@
             return View(cartProductService.ConvertForShoppingCart(products));
         }
 
-        public async Task<IActionResult> AddToCart(int productId)
+        public async Task<IActionResult> AddToCart(int id)
         {
-            var product = await cartProductService.GetProductsAsync(productId);
+            var product = await cartProductService.GetProductsAsync(id);
             var products = this.HttpContext.Session.Get<List<Product>>("cart");
             if (products == null)
             {
                 products = new List<Product>();
             }
 
-            if (!products.Contains(products.FirstOrDefault(p => p.Id == productId)))
+            if (!products.Contains(products.FirstOrDefault(p => p.Id == id)))
             {
                 products.Add(product);
             }
             else
             {
                 this.TempData["__MessageType"] = MessageType.Warning;
-                this.TempData["__MessageText"] = $"Product already added.";
+                this.TempData["__MessageText"] = Constants.InfoMessages.ProductAlreadyAdded;
             }
             this.HttpContext.Session.Put("cart", products);
             return RedirectToAction("Index");
@@ -86,7 +87,7 @@
                     if (order == null)
                     {
                         this.TempData["__MessageType"] = MessageType.Info;
-                        this.TempData["__MessageText"] = $"You should add an address before completing your order.";
+                        this.TempData["__MessageText"] = Constants.InfoMessages.MissingAddress;
                         return Redirect("/Identity/Account/Manage/AddAddress");
                     }
                     this.ViewData["orderId"] = order.Id;
@@ -97,7 +98,7 @@
                 }
             }
             this.TempData["__MessageType"] = MessageType.Info;
-            this.TempData["__MessageText"] = $"Cart is empty";
+            this.TempData["__MessageText"] = Constants.InfoMessages.EmptyCart;
             return RedirectToAction("Index");
         }
     }

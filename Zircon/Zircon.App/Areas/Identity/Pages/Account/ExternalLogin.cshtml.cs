@@ -10,6 +10,7 @@
     using System.Security.Claims;
     using System.Text.Encodings.Web;
     using System.Threading.Tasks;
+    using Zircon.Common;
     using Zircon.Models;
 
     [AllowAnonymous]
@@ -87,13 +88,13 @@
             returnUrl = returnUrl ?? Url.Content("~/");
             if (remoteError != null)
             {
-                ErrorMessage = $"Error from external provider: {remoteError}";
+                ErrorMessage = string.Format(Constants.ErrorMessages.ExternalProvider, remoteError);
                 return RedirectToPage("./Login", new { ReturnUrl = returnUrl });
             }
             var info = await signInManager.GetExternalLoginInfoAsync();
             if (info == null)
             {
-                ErrorMessage = "Error loading external login information.";
+                ErrorMessage = Constants.ErrorMessages.ExternalLoginInformation;
                 return RedirectToPage("./Login", new { ReturnUrl = returnUrl });
             }
 
@@ -131,7 +132,7 @@
             var info = await signInManager.GetExternalLoginInfoAsync();
             if (info == null)
             {
-                ErrorMessage = "Error loading external login information during confirmation.";
+                ErrorMessage = Constants.ErrorMessages.ExternalLoginInformationDuringConfirmation;
                 return RedirectToPage("./Login", new { ReturnUrl = returnUrl });
             }
 
@@ -161,7 +162,7 @@
                         await emailSender.SendEmailAsync(Input.Email, "Confirm your email",
                             $"Please confirm your account by <a href='{HtmlEncoder.Default.Encode(callbackUrl)}'>clicking here</a>.");
 
-                        StatusMessage = "Verification email sent. Please check your email.";
+                        StatusMessage = Constants.SuccessMessages.VerificationEmailSent;
                     }
                 }
                 foreach (var error in result.Errors)

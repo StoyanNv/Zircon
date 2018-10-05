@@ -1,8 +1,9 @@
-﻿@model AddProductBindingModel
+﻿@model AddAndEditProductBindingModel
 @{
     ViewData["Title"] = "Add Product";
 }
 
 <h2>@ViewData["Title"]</h2>
-
-@Html.EditorForModel()
+<form asp-area="Admin" asp-controller="Products" asp-action="Add" method="post" class="form-horizontal">
+    @Html.EditorForModel()
+</form>

@@ -7,6 +7,7 @@
     using System;
     using System.ComponentModel.DataAnnotations;
     using System.Threading.Tasks;
+    using Zircon.Common;
     using Zircon.Models;
     using Zircon.Services.UserServices.Interfaces;
 
@@ -15,17 +16,17 @@
         private readonly UserManager<User> userManager;
         private readonly SignInManager<User> signInManager;
         private readonly IEmailSender emailSender;
-        private ICangeUserInfoSerice cangeUserInfoSerice;
+        private readonly IChangeUserInfoService changeUserInfoService;
         public IndexModel(
             UserManager<User> userManager,
             SignInManager<User> signInManager,
             IEmailSender emailSender,
-            ICangeUserInfoSerice cangeUserInfoSerice)
+            IChangeUserInfoService changeUserInfoService)
         {
             this.userManager = userManager;
             this.signInManager = signInManager;
             this.emailSender = emailSender;
-            this.cangeUserInfoSerice = cangeUserInfoSerice;
+            this.changeUserInfoService = changeUserInfoService;
         }
 
         public string Username { get; set; }
@@ -54,7 +55,7 @@
             var user = await userManager.GetUserAsync(User);
             if (user == null)
             {
-                return NotFound($"Unable to load user with ID '{userManager.GetUserId(User)}'.");
+                return NotFound(string.Format(Constants.ErrorMessages.UserNotFound, userManager.GetUserId(User)));
             }
 
             var userName = await userManager.GetUserNameAsync(user);
@@ -83,7 +84,7 @@
             var user = await userManager.GetUserAsync(User);
             if (user == null)
             {
-                return NotFound($"Unable to load user with ID '{userManager.GetUserId(User)}'.");
+                return NotFound(string.Format(Constants.ErrorMessages.UserNotFound, userManager.GetUserId(User)));
             }
 
             var phoneNumber = await userManager.GetPhoneNumberAsync(user);
@@ -93,26 +94,26 @@
                 if (!setPhoneResult.Succeeded)
                 {
                     var userId = await userManager.GetUserIdAsync(user);
-                    throw new InvalidOperationException($"Unexpected error occurred setting phone number for user with ID '{userId}'.");
+
+                    throw new InvalidOperationException(string.Format(Constants.ErrorMessages.SettingPhoneNumber, userId));
                 }
             }
             var name = user.Name;
             if (Input.Name != name)
             {
                 user.Name = name;
-                await this.cangeUserInfoSerice.ChangeNameAsync(Input.Name, user.Email);
-
+                await this.changeUserInfoService.ChangeNameAsync(Input.Name, user.Email);
             }
             var surname = user.Surname;
 
             if (Input.Surname != surname)
             {
                 user.Surname = surname;
-                await this.cangeUserInfoSerice.ChangeSurnameAsync(Input.Surname, user.Email);
+                await this.changeUserInfoService.ChangeSurnameAsync(Input.Surname, user.Email);
             }
 
             await signInManager.RefreshSignInAsync(user);
-            StatusMessage = "Your profile has been updated";
+            StatusMessage = Constants.SuccessMessages.UpdateProfile;
             return RedirectToPage();
         }
     }

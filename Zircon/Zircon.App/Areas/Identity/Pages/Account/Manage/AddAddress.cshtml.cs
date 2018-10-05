@@ -5,6 +5,7 @@
     using Microsoft.AspNetCore.Mvc;
     using Microsoft.AspNetCore.Mvc.RazorPages;
     using System.Threading.Tasks;
+    using Zircon.Common;
     using Zircon.Common.User.BindingModels;
     using Zircon.Models;
     using Zircon.Services.UserServices.Interfaces;
@@ -29,7 +30,7 @@
             var user = await userManager.GetUserAsync(User);
             if (user == null)
             {
-                return NotFound($"Unable to load user with ID '{userManager.GetUserId(User)}'.");
+                return NotFound(string.Format(Constants.ErrorMessages.UserNotFound, userManager.GetUserId(User)));
             }
 
             Model = await this.userAddressService.BindAddress(user.Id);
@@ -42,7 +43,7 @@
 
             if (user == null)
             {
-                return NotFound($"Unable to load user with ID '{userManager.GetUserId(User)}'.");
+                return NotFound(string.Format(Constants.ErrorMessages.UserNotFound, userManager.GetUserId(User)));
             }
 
             this.StatusMessage = await this.userAddressService.AddOrUpdateAddress(user.Id, Model);

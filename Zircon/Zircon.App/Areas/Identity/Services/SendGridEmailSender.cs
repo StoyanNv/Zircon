@@ -1,4 +1,6 @@
-﻿namespace Zircon.App.Areas.Identity.Services
+﻿using Zircon.Common;
+
+namespace Zircon.App.Areas.Identity.Services
 {
     using System.Threading.Tasks;
     using Microsoft.AspNetCore.Identity.UI.Services;
@@ -16,7 +18,7 @@
         public async Task SendEmailAsync(string email, string subject, string htmlMessage)
         {
             var client = new SendGridClient(this.options.SendGridApiKey);
-            var from = new EmailAddress("stoian.nedkov@abv.bg", "Admin");
+            var from = new EmailAddress(Constants.EmailSenderEmail, Constants.EmailSenderName);
             var to = new EmailAddress(email, email);
             var msg = MailHelper.CreateSingleEmail(from, to, subject, htmlMessage, htmlMessage);
             var response = await client.SendEmailAsync(msg);

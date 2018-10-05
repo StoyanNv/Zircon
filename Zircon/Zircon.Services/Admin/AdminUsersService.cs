@@ -1,11 +1,10 @@
-﻿using Zircon.Models;
-
-namespace Zircon.Services.Admin
+﻿namespace Zircon.Services.Admin
 {
     using AutoMapper;
     using Data;
     using Interfaces;
     using Microsoft.EntityFrameworkCore;
+    using Models;
     using System.Collections.Generic;
     using System.Linq;
     using System.Threading.Tasks;
@@ -37,22 +36,23 @@ namespace Zircon.Services.Admin
                 return null;
             }
 
-            var model = Mapper.Map<UserDetailsViewModel>(user);
+            var userModel = Mapper.Map<UserDetailsViewModel>(user);
 
             if (user.Address != null)
             {
-                model.District = user.Address.District;
-                model.Town = user.Address.Town;
-                model.Street = user.Address.Street;
-                model.Number = user.Address.Number;
-                model.Postcode = user.Address.Postcode;
-                model.Floor = user.Address.Floor;
-                model.Block = user.Address.Block;
-                model.Apartment = user.Address.Apartment;
-                model.Bell = user.Address.Bell;
+                userModel = MapAddress(user, userModel);
             }
 
-            return model;
+            return userModel;
+        }
+
+        private UserDetailsViewModel MapAddress(User user, UserDetailsViewModel userModel)
+        {
+            var address = user.Address;
+            var addressModel = Mapper.Map<UserDetailsViewModel>(address);
+            var model = Mapper.Map(addressModel, userModel);
+            userModel = model;
+            return userModel;
         }
 
         private async Task<User> GetDbUser(string id)

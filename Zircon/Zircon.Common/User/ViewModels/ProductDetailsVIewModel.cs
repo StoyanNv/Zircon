@@ -11,5 +11,7 @@
         public decimal Price { get; set; }
 
         public string Category { get; set; }
+
+        public double Weight { get; set; }
     }
 }

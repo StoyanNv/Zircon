@@ -14,6 +14,12 @@
         <h2>Name: @Html.DisplayFor(model => model.Model.Name)</h2>
         <h5>Category: @Html.DisplayFor(model => model.Model.Category)</h5>
         <h5>Price: @Html.DisplayFor(model => model.Model.Price) lv.</h5>
-        <a class="btn btn-lg btn-warning" asp-controller="Cart" asp-action="AddToCart" asp-route-productId="@Model.Model.Id">Add to card</a>
+        <h5>Weight: @Html.DisplayFor(model => model.Model.Weight) grams</h5>
+        <a class="btn btn-lg btn-success" asp-controller="Cart" asp-action="AddToCart">Add to card</a>
+        @if (User.IsInRole("Administrator"))
+        {
+            <a id="edit" class="btn btn-lg btn-warning" asp-area="Admin" asp-controller="Products" asp-action="Edit">Edit</a>
+            <a id="delete" class="btn btn-lg btn-danger" data-toggle="confirmation" asp-area="Admin" asp-controller="Products" asp-action="Delete">Delete</a>
+        }
     </div>
 </div>

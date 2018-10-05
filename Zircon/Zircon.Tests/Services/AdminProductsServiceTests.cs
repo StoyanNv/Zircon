@@ -195,7 +195,7 @@
             });
             dbContext.SaveChanges();
 
-            var service = new CangeUserInfoSerice(dbContext, AutoMapper.Mapper.Instance);
+            var service = new ChangeUserInfoService(dbContext, AutoMapper.Mapper.Instance);
             await service.ChangeNameAsync("Name", "mail");
 
             Assert.IsNotNull(dbContext.Users.FirstOrDefault(u => u.Name == "Name"));

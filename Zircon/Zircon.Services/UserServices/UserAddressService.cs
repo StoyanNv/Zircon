@@ -1,6 +1,7 @@
 ﻿namespace Zircon.Services.UserServices
 {
     using AutoMapper;
+    using Common;
     using Common.User.BindingModels;
     using Data;
     using Interfaces;
@@ -12,7 +13,6 @@
     {
         public UserAddressService(ZirconDbContext dbContext, IMapper mapper) : base(dbContext, mapper)
         {
-
         }
 
         public async Task<AddAddressBindingModel> BindAddress(string userId)
@@ -36,30 +36,21 @@
 
             if (dbUser.Address == null)
             {
-                //addres message const
-
                 var address = Mapper.Map<Address>(model);
                 DbContext.Addresses.Add(address);
                 DbContext.SaveChanges();
                 dbUser.Address = address;
                 DbContext.SaveChanges();
-                return "Address was added";
+                return Constants.SuccessMessages.AddressAdd;
             }
-            //addres message const
-
             var currAddress = await DbContext.Addresses.FirstOrDefaultAsync(a => a.Id == dbUser.Address.Id);
-            currAddress.Town = model.Town;
-            currAddress.Apartment = model.Apartment;
-            currAddress.Bell = model.Bell;
-            currAddress.District = model.District;
-            currAddress.Block = model.Block;
-            currAddress.Floor = model.Floor;
-            currAddress.Number = model.Number;
-            currAddress.Postcode = model.Postcode;
-            currAddress.Street = model.Street;
+
+            int id = currAddress.Id;
+            currAddress = Mapper.Map(model, currAddress);
+            currAddress.Id = id;
             DbContext.Addresses.Update(currAddress);
             DbContext.SaveChanges();
-            return "Address was updated";
+            return Constants.SuccessMessages.AddressUpdate;
         }
     }
 }

@@ -3,12 +3,11 @@
     using Microsoft.AspNetCore.Builder;
     using Microsoft.AspNetCore.Identity;
     using Microsoft.Extensions.DependencyInjection;
+    using Zircon.Common;
     using Zircon.Models;
 
     public static class ApplicationBuilderAuthExtensions
     {
-        private const string DefaultAdminPassword = "adminasdasd1";
-
         private static readonly IdentityRole[] roles =
         {
             new IdentityRole("Administrator")
@@ -32,17 +31,17 @@
                     }
                 }
 
-                var user = await userManager.FindByNameAsync("admin");
+                var user = await userManager.FindByNameAsync(Constants.DefaultAdminEmail);
 
                 if (user == null)
                 {
                     user = new User()
                     {
-                        UserName = "nedkov98@gmail.com",
-                        Email = "nedkov98@gmail.com",
+                        UserName = Constants.DefaultAdminEmail,
+                        Email = Constants.DefaultAdminEmail,
                         EmailConfirmed = true
                     };
-                    var result = await userManager.CreateAsync(user, DefaultAdminPassword);
+                    var result = await userManager.CreateAsync(user, Constants.DefaultAdminPassword);
                     result = await userManager.AddToRoleAsync(user, roles[0].Name);
                 }
             }

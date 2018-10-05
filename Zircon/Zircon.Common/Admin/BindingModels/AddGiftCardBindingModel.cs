@@ -5,10 +5,10 @@
     public class AddGiftCardBindingModel
     {
         [Required]
-        [MinLength(4, ErrorMessage = "The code must have minimum length of 4")]
+        [MinLength(4, ErrorMessage = Constants.ErrorMessages.GiftCartMinimumLength)]
         public string Code { get; set; }
 
-        [Required(ErrorMessage = "Discount field is required")]
+        [Required(ErrorMessage = Constants.ErrorMessages.RequiredGiftCartDiscount)]
         public int Discount { get; set; }
     }
 }

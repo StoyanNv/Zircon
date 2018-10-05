@@ -15,9 +15,9 @@
         {
         }
 
-        public async Task<AddProductBindingModel> GetProductAsync()
+        public async Task<AddAndEditProductBindingModel> GetProductAsync()
         {
-            var model = new AddProductBindingModel()
+            var model = new AddAndEditProductBindingModel()
             {
                 Categories = await this.DbContext.Categories
                     .Select(b => new SelectListItem()
@@ -31,7 +31,7 @@
             return model;
         }
 
-        public async Task<int> AddProductAsync(AddProductBindingModel model)
+        public async Task<int> AddProductAsync(AddAndEditProductBindingModel model)
         {
             var product = this.Mapper.Map<Product>(model);
             product.Category = await this.DbContext.Categories.FindAsync(int.Parse(model.CategoryId));
@@ -57,6 +57,38 @@
                 await this.DbContext.GiftCards.AddAsync(giftCard);
                 await this.DbContext.SaveChangesAsync();
             }
+        }
+
+        public async Task<AddAndEditProductBindingModel> GetEditProductDetailsAsync(int id)
+        {
+            var product = await this.DbContext.Products.FindAsync(id);
+
+            var model = this.Mapper.Map<AddAndEditProductBindingModel>(product);
+
+            model.Categories = await this.DbContext.Categories
+                .Select(b => new SelectListItem()
+                {
+                    Text = b.Name,
+                    Value = b.Id.ToString()
+                })
+                .ToListAsync();
+
+            return model;
+        }
+        public async Task<int> EditProductAsync(AddAndEditProductBindingModel model)
+        {
+            var product = this.Mapper.Map<Product>(model);
+            product.Category = await this.DbContext.Categories.FindAsync(int.Parse(model.CategoryId));
+            this.DbContext.Products.Update(product);
+            await this.DbContext.SaveChangesAsync();
+            return product.Id;
+        }
+
+        public async Task DeleteProductAsync(int id)
+        {
+            var product = await this.DbContext.Products.FindAsync(id);
+            this.DbContext.Products.Remove(product);
+            this.DbContext.SaveChanges();
         }
     }
 }

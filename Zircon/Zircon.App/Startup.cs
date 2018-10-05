@@ -133,7 +133,7 @@
             services.AddScoped<ICategoriesService, CategoriesService>();
             services.AddScoped<ICartProductService, CartProductService>();
             services.AddScoped<IUserAddressService, UserAddressService>();
-            services.AddScoped<ICangeUserInfoSerice, CangeUserInfoSerice>();
+            services.AddScoped<IChangeUserInfoService, ChangeUserInfoService>();
         }
     }
 }

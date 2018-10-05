@@ -1,12 +1,11 @@
-﻿using Zircon.Models;
-
-namespace Zircon.Services.UserServices
+﻿namespace Zircon.Services.UserServices
 {
     using AutoMapper;
     using Common.User.ViewModels;
     using Data;
     using Interfaces;
     using Microsoft.EntityFrameworkCore;
+    using Models;
     using System.Collections.Generic;
     using System.Linq;
     using System.Threading.Tasks;
@@ -45,7 +44,6 @@ namespace Zircon.Services.UserServices
                 if (product != null)
                 {
                     res.Category = product.Category.Name;
-
                 }
             }
             return result;

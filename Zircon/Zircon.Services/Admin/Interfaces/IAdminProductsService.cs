@@ -5,9 +5,12 @@
 
     public interface IAdminProductsService
     {
-        Task<int> AddProductAsync(AddProductBindingModel model);
-        Task<AddProductBindingModel> GetProductAsync();
+        Task<int> AddProductAsync(AddAndEditProductBindingModel model);
+        Task<AddAndEditProductBindingModel> GetProductAsync();
         Task AddCategoryAsync(AddCategoryBindingModel model);
         Task AddGiftCardAsync(AddGiftCardBindingModel model);
+        Task<AddAndEditProductBindingModel> GetEditProductDetailsAsync(int id);
+        Task<int> EditProductAsync(AddAndEditProductBindingModel model);
+        Task DeleteProductAsync(int id);
     }
-}
+}   
