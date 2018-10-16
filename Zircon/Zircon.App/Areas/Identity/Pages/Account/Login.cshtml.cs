@@ -1,5 +1,6 @@
 ﻿namespace Zircon.App.Areas.Identity.Pages.Account
 {
+    using Helpers.Messages;
     using Microsoft.AspNetCore.Authentication;
     using Microsoft.AspNetCore.Authorization;
     using Microsoft.AspNetCore.Identity;
@@ -9,6 +10,7 @@
     using System.Collections.Generic;
     using System.Linq;
     using System.Threading.Tasks;
+    using Zircon.Common;
     using Zircon.Common.User.BindingModels;
     using Zircon.Models;
 
@@ -33,7 +35,6 @@
 
         [TempData]
         public string ErrorMessage { get; set; }
-
         public async Task<IActionResult> OnGetAsync(string returnUrl = null)
         {
             if (this.signInManager.IsSignedIn(User))
@@ -85,6 +86,8 @@
                 }
                 else
                 {
+                    this.TempData["__MessageType"] = MessageType.Danger;
+                    this.TempData["__MessageText"] = Constants.ErrorMessages.InvalidLoginCredentials;
                     ModelState.AddModelError(string.Empty, "Invalid login attempt.");
                     return Page();
                 }

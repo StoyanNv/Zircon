@@ -46,7 +46,7 @@
                 .Where(auth => CurrentLogins.All(ul => auth.Name != ul.LoginProvider))
                 .ToList();
             ShowRemoveButton = user.PasswordHash != null || CurrentLogins.Count > 1;
-            return Page();
+            return Page();  
         }
 
         public async Task<IActionResult> OnPostRemoveLoginAsync(string loginProvider, string providerKey)
@@ -71,6 +71,7 @@
 
         public async Task<IActionResult> OnPostLinkLoginAsync(string provider)
         {
+            StatusMessage = "";
             // Clear the existing external cookie to ensure a clean login process
             await HttpContext.SignOutAsync(IdentityConstants.ExternalScheme);
 
@@ -97,7 +98,11 @@
             var result = await _userManager.AddLoginAsync(user, info);
             if (!result.Succeeded)
             {
-                throw new InvalidOperationException(string.Format(Constants.ErrorMessages.AddingExternalLogin, user.Id));
+                if (result.Errors.First().Code == "LoginAlreadyAssociated")
+                {
+                    StatusMessage = result.Errors.First().Description;
+                    return RedirectToPage();
+                }
             }
 
             // Clear the existing external cookie to ensure a clean login process

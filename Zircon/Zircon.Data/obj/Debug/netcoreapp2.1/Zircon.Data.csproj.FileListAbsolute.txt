@@ -1,0 +1,12 @@
+C:\Zircon\Zircon\Zircon.Data\bin\Debug\netcoreapp2.1\Zircon.Data.deps.json
+C:\Zircon\Zircon\Zircon.Data\bin\Debug\netcoreapp2.1\Zircon.Data.dll
+C:\Zircon\Zircon\Zircon.Data\bin\Debug\netcoreapp2.1\Zircon.Data.pdb
+C:\Zircon\Zircon\Zircon.Data\bin\Debug\netcoreapp2.1\Zircon.Models.dll
+C:\Zircon\Zircon\Zircon.Data\bin\Debug\netcoreapp2.1\Zircon.Models.pdb
+C:\Zircon\Zircon\Zircon.Data\obj\Debug\netcoreapp2.1\Zircon.Data.csprojAssemblyReference.cache
+C:\Zircon\Zircon\Zircon.Data\obj\Debug\netcoreapp2.1\Zircon.Data.csproj.CoreCompileInputs.cache
+C:\Zircon\Zircon\Zircon.Data\obj\Debug\netcoreapp2.1\Zircon.Data.AssemblyInfoInputs.cache
+C:\Zircon\Zircon\Zircon.Data\obj\Debug\netcoreapp2.1\Zircon.Data.AssemblyInfo.cs
+C:\Zircon\Zircon\Zircon.Data\obj\Debug\netcoreapp2.1\Zircon.Data.csproj.CopyComplete
+C:\Zircon\Zircon\Zircon.Data\obj\Debug\netcoreapp2.1\Zircon.Data.dll
+C:\Zircon\Zircon\Zircon.Data\obj\Debug\netcoreapp2.1\Zircon.Data.pdb

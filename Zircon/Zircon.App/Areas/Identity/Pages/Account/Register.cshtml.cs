@@ -1,5 +1,6 @@
 ﻿namespace Zircon.App.Areas.Identity.Pages.Account
 {
+    using Helpers.Messages;
     using Microsoft.AspNetCore.Authorization;
     using Microsoft.AspNetCore.Identity;
     using Microsoft.AspNetCore.Identity.UI.Services;
@@ -58,7 +59,6 @@
             returnUrl = returnUrl ?? Url.Content("~/");
             if (ModelState.IsValid)
             {
-
                 var user = new User
                 {
                     UserName = Input.Email,
@@ -83,6 +83,11 @@
                         $"Please confirm your account by <a href='{HtmlEncoder.Default.Encode(callbackUrl)}'>clicking here</a>.");
 
                     StatusMessage = Constants.SuccessMessages.VerificationEmailSent;
+                }
+                else
+                {
+                    this.TempData["__MessageType"] = MessageType.Danger;
+                    this.TempData["__MessageText"] = Constants.ErrorMessages.UserAlreadyExists;
                 }
                 foreach (var error in result.Errors)
                 {

@@ -1,4 +1,6 @@
-﻿namespace Zircon.Services.UserServices
+﻿using Zircon.Common;
+
+namespace Zircon.Services.UserServices
 {
     using AutoMapper;
     using Common.User.ViewModels;
@@ -12,7 +14,6 @@
 
     public class CategoriesService : BaseEfService, ICategoriesService
     {
-        private const string BlankImg = "http://www.shreejeeschool.in/wp-content/uploads/2016/11/blank-img.jpg";
         public CategoriesService(ZirconDbContext dbContext, IMapper mapper) : base(dbContext, mapper)
         {
         }
@@ -74,7 +75,7 @@
 
             if (product == null)
             {
-                return BlankImg;
+                return Constants.BlankImg;
             }
             return product.PictureUrl;
         }

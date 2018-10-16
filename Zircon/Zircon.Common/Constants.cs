@@ -6,6 +6,7 @@
         public const string EmailSenderName = "Admin";
         public const string DefaultAdminEmail = "nedkov98@gmail.com";
         public const string DefaultAdminPassword = "adminasdasd1";
+        public const string BlankImg = "http://www.shreejeeschool.in/wp-content/uploads/2016/11/blank-img.jpg";
 
         public static class SuccessMessages
         {
@@ -27,7 +28,6 @@
             public const string UserNotFound = "Unable to load user with ID '{0}'.";
             public const string RemovingExternalLogin = "Unexpected error occurred removing external login for user with ID '{0}'.";
             public const string LoadingExternalLoginInfo = "Unexpected error occurred loading external login info for user with ID '{0}'.";
-            public const string AddingExternalLogin = "Unexpected error occurred adding external login for user with ID '{0}'.";
             public const string SettingPhoneNumber = "Unexpected error occurred setting phone number for user with ID '{0}'.";
             public const string ConfirmEmail = "Error confirming email for user with ID '{0}'.";
             public const string ExternalProvider = "Error from external provider: {0}.";
@@ -38,6 +38,8 @@
             public const string ProductCategoryIsRequired = "You have to specify a category";
             public const string PasswordLength = "The {0} must be at least {2} and at max {1} characters long.";
             public const string PasswordsDoNotMatch = "Passwords don't match";
+            public const string InvalidLoginCredentials = "Invalid login credentials";
+            public const string UserAlreadyExists = "User already exists";
         }
         public static class InfoMessages
         {

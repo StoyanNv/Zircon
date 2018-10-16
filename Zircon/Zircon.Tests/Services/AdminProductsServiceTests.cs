@@ -56,7 +56,7 @@
         [TestMethod]
         public async Task AdminProductsService_AddProductAsync()
         {
-            AddProductBindingModel model = new AddProductBindingModel() { Price = 2, Name = "Ring", CategoryId = "1", PictureUrl = "https://media.tiffany.com/is/image/Tiffany/1X/20180403_CB_Necklaces_and_Pendants_Tile2_3x2Promo_US_paloma_picasso_something_to_love.jpg?v=20180322135418" };
+            AddAndEditProductBindingModel model = new AddAndEditProductBindingModel() { Price = 2, Name = "Ring", CategoryId = "1", PictureUrl = "https://media.tiffany.com/is/image/Tiffany/1X/20180403_CB_Necklaces_and_Pendants_Tile2_3x2Promo_US_paloma_picasso_something_to_love.jpg?v=20180322135418" };
             dbContext.SaveChanges();
             var service = new AdminProductsService(dbContext, AutoMapper.Mapper.Instance);
             await service.AddProductAsync(model);
