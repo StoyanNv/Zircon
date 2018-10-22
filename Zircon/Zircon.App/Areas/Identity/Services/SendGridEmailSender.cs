@@ -1,12 +1,11 @@
-﻿using Zircon.Common;
-
-namespace Zircon.App.Areas.Identity.Services
+﻿namespace Zircon.App.Areas.Identity.Services
 {
-    using System.Threading.Tasks;
     using Microsoft.AspNetCore.Identity.UI.Services;
     using Microsoft.Extensions.Options;
     using SendGrid;
     using SendGrid.Helpers.Mail;
+    using System.Threading.Tasks;
+    using Zircon.Common;
 
     public class SendGridEmailSender : IEmailSender
     {

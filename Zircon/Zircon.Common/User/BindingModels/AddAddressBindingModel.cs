@@ -6,23 +6,23 @@
     {
         public int Id { get; set; }
         [Required]
-        [Display(Name = "Town *")]
+        [Display(Name = Constants.AttributeConstraint.TownDisplay)]
         public string Town { get; set; }
 
         [Required]
-        [Display(Name = "District *")]
+        [Display(Name = Constants.AttributeConstraint.DistrictDisplay)]
         public string District { get; set; }
 
         [Required]
-        [Display(Name = "Street *")]
+        [Display(Name = Constants.AttributeConstraint.StreetDisplay)]
         public string Street { get; set; }
 
         [Required]
-        [Display(Name = "Number *")]
+        [Display(Name = Constants.AttributeConstraint.NumberDisplay)]
         public int Number { get; set; }
 
         [Required]
-        [Display(Name = "Postcode *")]
+        [Display(Name = Constants.AttributeConstraint.PostcodeDisplay)]
         public int Postcode { get; set; }
 
         public int? Floor { get; set; }

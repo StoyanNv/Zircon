@@ -9,6 +9,7 @@
     using Microsoft.AspNetCore.Identity;
     using Microsoft.AspNetCore.Identity.UI.Services;
     using Microsoft.AspNetCore.Mvc;
+    using Microsoft.AspNetCore.Routing;
     using Microsoft.EntityFrameworkCore;
     using Microsoft.Extensions.Configuration;
     using Microsoft.Extensions.DependencyInjection;
@@ -82,6 +83,8 @@
 
             RegisterServiceLayer(services);
             services.AddDistributedMemoryCache();
+
+            services.Configure<RouteOptions>(options => options.LowercaseUrls = true);
 
             services.AddMvc().SetCompatibilityVersion(CompatibilityVersion.Version_2_1);
         }

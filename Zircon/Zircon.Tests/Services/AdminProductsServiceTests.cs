@@ -199,7 +199,6 @@
             await service.ChangeNameAsync("Name", "mail");
 
             Assert.IsNotNull(dbContext.Users.FirstOrDefault(u => u.Name == "Name"));
-
         }
     }
 }

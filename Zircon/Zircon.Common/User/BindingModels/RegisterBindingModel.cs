@@ -6,31 +6,32 @@
     {
 
         [Required]
-        [MinLength(3)]
+        [MinLength(Constants.AttributeConstraint.NameMinLenght)]
         public string Name { get; set; }
         [Required]
-        [MinLength(3)]
+        [MinLength(Constants.AttributeConstraint.SurnameMinLenght)]
         public string Surname { get; set; }
 
         [Required]
-        [MinLength(10)]
+        [MinLength(Constants.AttributeConstraint.PhoneMinLenght)]
         [Phone]
         public string Phone { get; set; }
 
         [Required]
         [EmailAddress]
-        [Display(Name = "Email")]
+        [Display(Name = Constants.AttributeConstraint.EmailDisplay)]
         public string Email { get; set; }
 
         [Required]
-        [StringLength(100, ErrorMessage = Constants.ErrorMessages.PasswordLength, MinimumLength = 6)]
+        [StringLength(Constants.AttributeConstraint.PasswordMaxLenght,
+            ErrorMessage = Constants.ErrorMessages.PasswordLength,
+            MinimumLength = Constants.AttributeConstraint.PasswordMinLenght)]
         [DataType(DataType.Password)]
-        [Display(Name = "Password")]
         public string Password { get; set; }
 
         [DataType(DataType.Password)]
-        [Display(Name = "Confirm password")]
-        [Compare("Password", ErrorMessage = Constants.ErrorMessages.PasswordsDoNotMatch)]
+        [Display(Name = Constants.AttributeConstraint.ConfirmPasswordDisplay)]
+        [Compare(Constants.AttributeConstraint.PasswordCompareValue, ErrorMessage = Constants.ErrorMessages.PasswordsDoNotMatch)]
         public string ConfirmPassword { get; set; }
     }
 }

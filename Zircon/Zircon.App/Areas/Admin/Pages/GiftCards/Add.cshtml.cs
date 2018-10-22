@@ -1,5 +1,3 @@
-using Zircon.Common;
-
 namespace Zircon.App.Areas.Admin.Pages.GiftCards
 {
     using Helpers.Messages;
@@ -7,11 +5,12 @@ namespace Zircon.App.Areas.Admin.Pages.GiftCards
     using Microsoft.AspNetCore.Mvc;
     using Microsoft.AspNetCore.Mvc.RazorPages;
     using System.Threading.Tasks;
+    using Zircon.Common;
     using Zircon.Common.Admin.BindingModels;
     using Zircon.Services.Admin.Interfaces;
 
-    [Area("Admin")]
-    [Authorize(Roles = "Administrator")]
+    [Area(Constants.AttributeConstraint.AdminArea)]
+    [Authorize(Roles = Constants.AttributeConstraint.AdminRole)]
     public class AddModel : PageModel
     {
         private readonly IAdminProductsService adminProductsService;
@@ -21,7 +20,8 @@ namespace Zircon.App.Areas.Admin.Pages.GiftCards
             this.adminProductsService = adminProductsService;
         }
 
-        [BindProperty] public AddGiftCardBindingModel AddGiftCardModel { get; set; }
+        [BindProperty]
+        public AddGiftCardBindingModel AddGiftCardModel { get; set; }
 
         public void OnGet()
         {
@@ -39,8 +39,7 @@ namespace Zircon.App.Areas.Admin.Pages.GiftCards
 
             await this.adminProductsService.AddGiftCardAsync(this.AddGiftCardModel);
             this.TempData["__MessageType"] = MessageType.Success;
-            this.TempData["__MessageText"] =
-                string.Format(Constants.SuccessMessages.GiftCardAdded, this.AddGiftCardModel.Code);
+            this.TempData["__MessageText"] = string.Format(Constants.SuccessMessages.GiftCardAdded, this.AddGiftCardModel.Code);
             return RedirectToAction("Index", "Home");
         }
     }

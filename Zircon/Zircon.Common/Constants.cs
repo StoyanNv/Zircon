@@ -40,12 +40,41 @@
             public const string PasswordsDoNotMatch = "Passwords don't match";
             public const string InvalidLoginCredentials = "Invalid login credentials";
             public const string UserAlreadyExists = "User already exists";
+            //public const string GiftCartDiscountRange = "Gift cart discount must be at least 1%";
         }
         public static class InfoMessages
         {
             public const string ProductAlreadyAdded = "Product already added.";
             public const string MissingAddress = "You should add an address before completing your order.";
             public const string EmptyCart = "Cart is empty.";
+        }
+        public static class AttributeConstraint
+        {
+            public const string AdminArea = "Admin";
+            public const string AdminRole = "Administrator";
+            public const string PhoneNumberDisplay = "Phone number";
+            public const string PictureUrlDisplay = "Picture URL";
+            public const string CategoryDisplay = "Category";
+            public const string TownDisplay = "Town *";
+            public const string DistrictDisplay = "District *";
+            public const string StreetDisplay = "Street *";
+            public const string NumberDisplay = "Number *";
+            public const string PostcodeDisplay = "Postcode *";
+            public const string RememberMeDisplay = "Remember me?";
+            public const string EmailDisplay = "E-mail";
+            public const string ConfirmPasswordDisplay = "Confirm password";
+            public const string PasswordCompareValue = "Password";
+
+            public const double PriceMinValue = 0.1;
+            public const double WeightMinValue = 0.1;
+            public const int GiftCodeMinLength = 4;
+            public const int GiftCodeMinDiscount = 1;
+            public const int GiftCodeMaxDiscount = 99;
+            public const int NameMinLenght = 3;
+            public const int SurnameMinLenght = 3;
+            public const int PhoneMinLenght = 10;
+            public const int PasswordMinLenght = 6;
+            public const int PasswordMaxLenght = 100;
         }
     }
 }

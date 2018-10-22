@@ -15,7 +15,7 @@ namespace Zircon.Data.Migrations
         {
 #pragma warning disable 612, 618
             modelBuilder
-                .HasAnnotation("ProductVersion", "2.1.3-rtm-32065")
+                .HasAnnotation("ProductVersion", "2.1.4-rtm-31024")
                 .HasAnnotation("Relational:MaxIdentifierLength", 128)
                 .HasAnnotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn);
 
@@ -225,7 +225,8 @@ namespace Zircon.Data.Migrations
                     b.Property<string>("Name")
                         .IsRequired();
 
-                    b.Property<string>("PictureUrl");
+                    b.Property<string>("PictureUrl")
+                        .IsRequired();
 
                     b.Property<decimal>("Price");
 
@@ -278,7 +279,8 @@ namespace Zircon.Data.Migrations
 
                     b.Property<DateTimeOffset?>("LockoutEnd");
 
-                    b.Property<string>("Name");
+                    b.Property<string>("Name")
+                        .IsRequired();
 
                     b.Property<string>("NormalizedEmail")
                         .HasMaxLength(256);
@@ -294,7 +296,8 @@ namespace Zircon.Data.Migrations
 
                     b.Property<string>("SecurityStamp");
 
-                    b.Property<string>("Surname");
+                    b.Property<string>("Surname")
+                        .IsRequired();
 
                     b.Property<bool>("TwoFactorEnabled");
 

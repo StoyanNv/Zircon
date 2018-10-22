@@ -1,7 +1,4 @@
-﻿using System.Collections.Generic;
-using Microsoft.AspNetCore.Mvc.Rendering;
-
-namespace Zircon.App.Areas.Admin.Controllers
+﻿namespace Zircon.App.Areas.Admin.Controllers
 {
     using Helpers.Messages;
     using Microsoft.AspNetCore.Mvc;

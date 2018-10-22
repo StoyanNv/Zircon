@@ -42,7 +42,7 @@
         public class InputModel
         {
             [Phone]
-            [Display(Name = "Phone number")]
+            [Display(Name = Constants.AttributeConstraint.PhoneNumberDisplay)]
             public string PhoneNumber { get; set; }
 
             public string Name { get; set; }

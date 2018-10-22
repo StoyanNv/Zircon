@@ -10,7 +10,7 @@
     {
         private static readonly IdentityRole[] roles =
         {
-            new IdentityRole("Administrator")
+            new IdentityRole(Constants.AttributeConstraint.AdminRole)
         };
 
         public static async void SeedDatabase(

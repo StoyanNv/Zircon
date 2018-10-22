@@ -88,7 +88,7 @@ using Zircon.App.Helpers.Messages;
 #line default
 #line hidden
             BeginContext(91, 423, false);
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("form", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "624cdb6b479d4bb99e5eac38c8c5a186", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("form", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "4be868552a014e76abaca58d3796e65d", async() => {
                 BeginContext(111, 6, true);
                 WriteLiteral("\r\n    ");
                 EndContext();
@@ -113,7 +113,7 @@ Write(Html.FormGroupFor(model => model.Discount));
                 WriteLiteral("\r\n    <div class=\"form-group\">\r\n        <div class=\"col-sm-10 col-sm-push-2\">\r\n            <input type=\"submit\" value=\"Create\" class=\"btn btn-success\"/>\r\n            ");
                 EndContext();
                 BeginContext(371, 106, false);
-                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "662c5b00275e4e7a8bf48e3eabcb6036", async() => {
+                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "c1a852efed94411c87e568b4c3310498", async() => {
                     BeginContext(467, 6, true);
                     WriteLiteral("Cancel");
                     EndContext();
