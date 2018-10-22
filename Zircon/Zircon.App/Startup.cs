@@ -43,7 +43,7 @@
             services.AddDbContext<ZirconDbContext>(options =>
                 options.UseSqlServer(
                     Configuration.GetConnectionString("ZirconConnection")));
-
+             
             services.AddSession(options => options.Cookie.IsEssential = true);
 
             services.AddIdentity<User, IdentityRole>()

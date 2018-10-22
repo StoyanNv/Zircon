@@ -137,7 +137,7 @@ WriteAttributeValue(" ", 306, Html.DisplayFor(model => model.Model.Name), 307, 4
             WriteLiteral(" grams</h5>\r\n        ");
             EndContext();
             BeginContext(697, 94, false);
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "f304829df5524f1399c5b7f0be88645c", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "27a4204eb5344e5aa296dd1c90f875c1", async() => {
                 BeginContext(776, 11, true);
                 WriteLiteral("Add to card");
                 EndContext();
@@ -171,7 +171,7 @@ WriteAttributeValue(" ", 306, Html.DisplayFor(model => model.Model.Name), 307, 4
             WriteLiteral("            ");
             EndContext();
             BeginContext(862, 113, false);
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "67131be908a34e78b1a44ab9919d7afa", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "718eb1ea8ed34ca095c13602cb20d187", async() => {
                 BeginContext(967, 4, true);
                 WriteLiteral("Edit");
                 EndContext();
@@ -199,7 +199,7 @@ WriteAttributeValue(" ", 306, Html.DisplayFor(model => model.Model.Name), 307, 4
             WriteLiteral("\r\n            ");
             EndContext();
             BeginContext(989, 145, false);
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "ab406cd8074144d3b4606cb19ebf8c21", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "12cb3328509245158ce52af87e418cd8", async() => {
                 BeginContext(1124, 6, true);
                 WriteLiteral("Delete");
                 EndContext();

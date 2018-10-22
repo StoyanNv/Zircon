@@ -34,8 +34,11 @@
                 products = new List<Product>();
             }
 
+            this.ViewData["ProductsCount"] = products.Count;
+
             this.TotalPrice = products.Select(x => x.Price).Sum();
             this.ViewData["TotalPrice"] = this.TotalPrice;
+
             return View(cartProductService.ConvertForShoppingCart(products));
         }
 
@@ -57,6 +60,8 @@
                 this.TempData["__MessageType"] = MessageType.Warning;
                 this.TempData["__MessageText"] = Constants.InfoMessages.ProductAlreadyAdded;
             }
+
+            this.HttpContext.Session.Put("count", products.Count);
             this.HttpContext.Session.Put("cart", products);
             return RedirectToAction("Index");
         }
@@ -69,7 +74,15 @@
             }
 
             products.Remove(products.FirstOrDefault(p => p.Id == productId));
-            this.HttpContext.Session.Put("cart", products);
+            if (products.Count == 0)
+            {
+                this.HttpContext.Session.Clear();
+            }
+            else
+            {
+                this.HttpContext.Session.Put("cart", products);
+                this.HttpContext.Session.Put("count", products.Count);
+            }
             return RedirectToAction("Index");
         }
         [HttpPost]

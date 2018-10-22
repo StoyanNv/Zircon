@@ -12,5 +12,6 @@
         IEnumerable<ShopingCartViewModel> ConvertForShoppingCart(IEnumerable<Product> products);
 
         Task<Order> FinishOrderAsync(IEnumerable<Product> model, string userId, string giftCardCode);
+
     }
 }
