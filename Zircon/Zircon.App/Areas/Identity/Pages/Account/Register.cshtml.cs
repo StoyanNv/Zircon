@@ -1,15 +1,15 @@
 ﻿namespace Zircon.App.Areas.Identity.Pages.Account
 {
-    using Helpers.Messages;
     using Microsoft.AspNetCore.Authorization;
     using Microsoft.AspNetCore.Identity;
     using Microsoft.AspNetCore.Identity.UI.Services;
     using Microsoft.AspNetCore.Mvc;
     using Microsoft.AspNetCore.Mvc.RazorPages;
+    using Microsoft.Extensions.Localization;
     using Microsoft.Extensions.Logging;
     using System.Text.Encodings.Web;
     using System.Threading.Tasks;
-    using Zircon.Common;
+    using Zircon.Common.Constrants;
     using Zircon.Common.User.BindingModels;
     using Zircon.Models;
 
@@ -20,17 +20,20 @@
         private readonly UserManager<User> userManager;
         private readonly ILogger<RegisterModel> logger;
         private readonly IEmailSender emailSender;
+        private readonly IStringLocalizer<RegisterModel> localizer;
 
         public RegisterModel(
             UserManager<User> userManager,
             SignInManager<User> signInManager,
             ILogger<RegisterModel> logger,
-            IEmailSender emailSender)
+            IEmailSender emailSender,
+            IStringLocalizer<RegisterModel> localizer)
         {
             this.userManager = userManager;
             this.signInManager = signInManager;
             this.logger = logger;
             this.emailSender = emailSender;
+            this.localizer = localizer;
         }
         [TempData]
         public string StatusMessage { get; set; }
@@ -70,7 +73,7 @@
                 var result = await userManager.CreateAsync(user, Input.Password);
                 if (result.Succeeded)
                 {
-                    logger.LogInformation("User created a new account with password.");
+                    logger.LogInformation(SuccessConstants.AccountCreatedLog);
 
                     var code = await userManager.GenerateEmailConfirmationTokenAsync(user);
                     var callbackUrl = Url.Page(
@@ -82,16 +85,18 @@
                     await emailSender.SendEmailAsync(Input.Email, "Confirm your email",
                         $"Please confirm your account by <a href='{HtmlEncoder.Default.Encode(callbackUrl)}'>clicking here</a>.");
 
-                    StatusMessage = Constants.SuccessMessages.VerificationEmailSent;
-                }
-                else
-                {
-                    this.TempData["__MessageType"] = MessageType.Danger;
-                    this.TempData["__MessageText"] = Constants.ErrorMessages.UserAlreadyExists;
+                    StatusMessage = SuccessConstants.VerificationEmailSent;
                 }
                 foreach (var error in result.Errors)
                 {
-                    ModelState.AddModelError(string.Empty, error.Description);
+                    if (error.Code == "DuplicateUserName")
+                    {
+                        ModelState.AddModelError(string.Empty, string.Format(this.localizer[ErrorConstants.UserAlreadyExists], Input.Email));
+                    }
+                    else
+                    {
+                        ModelState.AddModelError(string.Empty, this.localizer[error.Description]);
+                    }
                 }
             }
 

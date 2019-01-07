@@ -1,6 +1,6 @@
 ﻿namespace Zircon.Models
 {
-    using Common;
+    using Common.Constrants;
     using Microsoft.AspNetCore.Identity;
     using System.Collections.Generic;
     using System.ComponentModel.DataAnnotations;
@@ -11,11 +11,11 @@
         {
             Orders = new List<ProductOrders>();
         }
-        [MinLength(Constants.AttributeConstraint.NameMinLenght)]
+        [MinLength(AttributeConstraintsConstants.NameMinLenght)]
         [Required]
         public string Name { get; set; }
         [Required]
-        [MinLength(Constants.AttributeConstraint.SurnameMinLenght)]
+        [MinLength(AttributeConstraintsConstants.SurnameMinLenght)]
         public string Surname { get; set; }
         public Address Address { get; set; }
 

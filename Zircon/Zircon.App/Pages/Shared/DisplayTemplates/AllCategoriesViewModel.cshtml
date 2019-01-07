@@ -1,11 +1,13 @@
 ﻿@model AllCategoriesViewModel
+@using Microsoft.AspNetCore.Mvc.Localization
 
+@inject IViewLocalizer Localizer
 <div class="col-sm-4" style="padding-bottom: 20px">
     <div class="card" style="width: 18rem;">
         <img class="card-img-top" src="@Model.ImageUrl" alt="@Model.Name">
         <div class="card-body">
             <h5 class="card-title">@Model.Name</h5>
-            <a asp-page="/Categories/CategoryProducts" asp-route-id="@Model.Id" class="btn btn-primary">Go to Category</a>
+            <a asp-page="/Categories/CategoryProducts" asp-route-id="@Model.Id" class="btn btn-primary">@Localizer["Go to Category"]</a>
         </div>
     </div>
 </div>

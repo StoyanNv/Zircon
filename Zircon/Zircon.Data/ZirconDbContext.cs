@@ -6,6 +6,11 @@
 
     public class ZirconDbContext : IdentityDbContext<User>
     {
+        public ZirconDbContext(DbContextOptions<ZirconDbContext> options)
+            : base(options)
+        {
+        }
+
         public DbSet<Address> Addresses { get; set; }
 
         public DbSet<Category> Categories { get; set; }
@@ -20,10 +25,6 @@
 
         public DbSet<User> Users { get; set; }
 
-        public ZirconDbContext(DbContextOptions<ZirconDbContext> options)
-            : base(options)
-        {
-        }
 
         protected override void OnModelCreating(ModelBuilder builder)
         {

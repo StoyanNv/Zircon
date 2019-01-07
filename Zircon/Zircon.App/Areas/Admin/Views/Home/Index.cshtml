@@ -1,10 +1,10 @@
 ﻿@model IEnumerable<IndexProductsCardViewModel>
 @{
-    ViewData["Title"] = "Index";
+    ViewData["Title"] = "Home";
 }
 
-<h2>Home</h2>
-<h4>Wellcome to the Admin area!</h4>
+<h2>@ViewData["Title"]</h2>
+<h4>Wellcome to the Admin area!`</h4>
 <div class="row">
     @Html.DisplayForModel()
 </div>

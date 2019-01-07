@@ -2,18 +2,21 @@
 {
     using Helpers.Messages;
     using Microsoft.AspNetCore.Mvc;
+    using Microsoft.Extensions.Localization;
     using System.Threading.Tasks;
-    using Zircon.Common;
+    using Zircon.Common.Constrants;
     using Zircon.Common.Admin.BindingModels;
     using Zircon.Services.Admin.Interfaces;
-
 
     public class ProductsController : AdminController
     {
         private readonly IAdminProductsService adminProductsService;
+        private readonly IStringLocalizer<ProductsController> localizer;
 
-        public ProductsController(IAdminProductsService adminProductsService)
+        public ProductsController(IAdminProductsService adminProductsService,
+            IStringLocalizer<ProductsController> localizer)
         {
+            this.localizer = localizer;
             this.adminProductsService = adminProductsService;
         }
 
@@ -29,14 +32,14 @@
             if (!ModelState.IsValid)
             {
                 this.TempData["__MessageType"] = MessageType.Warning;
-                this.TempData["__MessageText"] = Constants.ErrorMessages.InvalidFormData;
+                this.TempData["__MessageText"] = this.localizer[ErrorConstants.InvalidFormData];
                 return View(model);
             }
 
             var id = await this.adminProductsService.AddProductAsync(model);
 
             this.TempData["__MessageType"] = MessageType.Success;
-            this.TempData["__MessageText"] = Constants.SuccessMessages.ProductAdded;
+            this.TempData["__MessageText"] = this.localizer[SuccessConstants.ProductAdded].ToString();
             return this.RedirectToPage("/Products/Details", new { id });
         }
         [HttpGet]
@@ -50,14 +53,14 @@
             if (!ModelState.IsValid)
             {
                 this.TempData["__MessageType"] = MessageType.Warning;
-                this.TempData["__MessageText"] = Constants.ErrorMessages.NoCategoryName;
+                this.TempData["__MessageText"] = this.localizer[ErrorConstants.NoCategoryName];
                 return View();
             }
 
             await this.adminProductsService.AddCategoryAsync(model);
 
             this.TempData["__MessageType"] = MessageType.Success;
-            this.TempData["__MessageText"] = string.Format(Constants.SuccessMessages.CategoryAdded, model.Name);
+            this.TempData["__MessageText"] = string.Format(this.localizer[SuccessConstants.CategoryAdded], model.Name);
             return RedirectToAction("Add");
         }
         [HttpGet]
@@ -72,14 +75,14 @@
             if (!ModelState.IsValid)
             {
                 this.TempData["__MessageType"] = MessageType.Warning;
-                this.TempData["__MessageText"] = Constants.ErrorMessages.InvalidFormData;
+                this.TempData["__MessageText"] = this.localizer[ErrorConstants.InvalidFormData];
                 return View(model);
             }
 
             var id = await this.adminProductsService.EditProductAsync(model);
 
             this.TempData["__MessageType"] = MessageType.Success;
-            this.TempData["__MessageText"] = Constants.SuccessMessages.ProductEdited;
+            this.TempData["__MessageText"] = this.localizer[SuccessConstants.ProductEdited].ToString();
 
             return this.RedirectToPage("/Products/Details", new { id });
         }
@@ -87,7 +90,7 @@
         public async Task<IActionResult> Delete(int id)
         {
             await this.adminProductsService.DeleteProductAsync(id);
-            
+
             return this.RedirectToAction("Index", "Home");
         }
     }

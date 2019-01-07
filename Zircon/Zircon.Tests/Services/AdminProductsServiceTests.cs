@@ -29,7 +29,7 @@
         [TestMethod]
         public async Task AdminProductsService_AddGiftCart()
         {
-            AddGiftCardBindingModel model = new AddGiftCardBindingModel() { Code = "1234", Discount = 20 };
+            AddGiftCardBindingModel model = new AddGiftCardBindingModel() { Code = "8888", Discount = 88 };
             dbContext.SaveChanges();
 
             AutoMapper.Mapper.Initialize(config => config.AddProfile<AutoMapperProfile>());
@@ -38,8 +38,8 @@
 
             await service.AddGiftCardAsync(model);
 
-            Assert.IsNotNull(dbContext.GiftCards.FirstOrDefault(c => c.Code == "1234"));
-            Assert.IsNotNull(dbContext.GiftCards.FirstOrDefault(c => c.Discount == 20));
+            Assert.IsNotNull(dbContext.GiftCards.FirstOrDefault(c => c.Code == "8888"));
+            Assert.IsNotNull(dbContext.GiftCards.FirstOrDefault(c => c.Discount == 88));
         }
         [TestMethod]
         public async Task AdminProductsService_AddCategoryAsync()

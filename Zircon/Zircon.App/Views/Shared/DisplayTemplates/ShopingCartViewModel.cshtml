@@ -1,7 +1,9 @@
 ﻿@model ShopingCartViewModel
+@using Microsoft.AspNetCore.Mvc.Localization
 
+@inject IViewLocalizer Localizer
 <tr>
     <td>@Model.Name</td>
-    <td>@Model.Price Lv.</td>
+    <td>@Model.Price @Localizer["Lv."]</td>
     <td><a class="btn btn-danger" asp-controller="Cart" asp-action="RemoveFromCart" asp-route-productId="@Model.Id">X</a></td>
 </tr>

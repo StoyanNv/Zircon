@@ -5,24 +5,28 @@
     using Microsoft.AspNetCore.Authorization;
     using Microsoft.AspNetCore.Identity;
     using Microsoft.AspNetCore.Mvc;
+    using Microsoft.Extensions.Localization;
     using Services.UserServices.Interfaces;
     using System.Collections.Generic;
     using System.Linq;
     using System.Threading.Tasks;
-    using Zircon.Common;
+    using Zircon.Common.Constrants;
     using Zircon.Models;
 
     public class CartController : Controller
     {
         private ICartProductService cartProductService;
         private UserManager<User> userManager;
+        private IStringLocalizer<CartController> localizer;
 
         public CartController(
             ICartProductService cartProductService,
-            UserManager<User> userManager)
+            UserManager<User> userManager,
+            IStringLocalizer<CartController> localizer)
         {
             this.cartProductService = cartProductService;
             this.userManager = userManager;
+            this.localizer = localizer;
         }
 
         public decimal TotalPrice { get; set; }
@@ -58,7 +62,7 @@
             else
             {
                 this.TempData["__MessageType"] = MessageType.Warning;
-                this.TempData["__MessageText"] = Constants.InfoMessages.ProductAlreadyAdded;
+                this.TempData["__MessageText"] = this.localizer[InfoConstants.ProductAlreadyAdded].ToString();
             }
 
             this.HttpContext.Session.Put("count", products.Count);
@@ -100,7 +104,7 @@
                     if (order == null)
                     {
                         this.TempData["__MessageType"] = MessageType.Info;
-                        this.TempData["__MessageText"] = Constants.InfoMessages.MissingAddress;
+                        this.TempData["__MessageText"] = this.localizer[InfoConstants.MissingAddress].ToString();
                         return Redirect("/Identity/Account/Manage/AddAddress");
                     }
                     this.ViewData["orderId"] = order.Id;
@@ -111,7 +115,7 @@
                 }
             }
             this.TempData["__MessageType"] = MessageType.Info;
-            this.TempData["__MessageText"] = Constants.InfoMessages.EmptyCart;
+            this.TempData["__MessageText"] = this.localizer[InfoConstants.EmptyCart].ToString();
             return RedirectToAction("Index");
         }
     }

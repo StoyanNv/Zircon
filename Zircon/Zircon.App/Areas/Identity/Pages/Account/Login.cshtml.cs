@@ -1,16 +1,16 @@
 ﻿namespace Zircon.App.Areas.Identity.Pages.Account
 {
-    using Helpers.Messages;
     using Microsoft.AspNetCore.Authentication;
     using Microsoft.AspNetCore.Authorization;
     using Microsoft.AspNetCore.Identity;
     using Microsoft.AspNetCore.Mvc;
     using Microsoft.AspNetCore.Mvc.RazorPages;
+    using Microsoft.Extensions.Localization;
     using Microsoft.Extensions.Logging;
     using System.Collections.Generic;
     using System.Linq;
     using System.Threading.Tasks;
-    using Zircon.Common;
+    using Zircon.Common.Constrants;
     using Zircon.Common.User.BindingModels;
     using Zircon.Models;
 
@@ -19,11 +19,15 @@
     {
         private readonly SignInManager<User> signInManager;
         private readonly ILogger<LoginModel> logger;
+        private readonly IStringLocalizer<LoginModel> localizer;
 
-        public LoginModel(SignInManager<User> signInManager, ILogger<LoginModel> logger)
+        public LoginModel(SignInManager<User> signInManager,
+            ILogger<LoginModel> logger,
+            IStringLocalizer<LoginModel> localizer)
         {
             this.signInManager = signInManager;
             this.logger = logger;
+            this.localizer = localizer;
         }
 
         [BindProperty]
@@ -39,7 +43,7 @@
         {
             if (this.signInManager.IsSignedIn(User))
             {
-                return RedirectToAction("Index", "Home",new {area = ""});
+                return RedirectToAction("Index", "Home", new { area = "" });
             }
             if (!string.IsNullOrEmpty(ErrorMessage))
             {
@@ -84,15 +88,11 @@
                     logger.LogWarning("User account locked out.");
                     return RedirectToPage("./Lockout");
                 }
-                else
-                {
-                    this.TempData["__MessageType"] = MessageType.Danger;
-                    this.TempData["__MessageText"] = Constants.ErrorMessages.InvalidLoginCredentials;
-                    ModelState.AddModelError(string.Empty, "Invalid login attempt.");
-                    return Page();
-                }
-            }
 
+                ExternalLogins = (await signInManager.GetExternalAuthenticationSchemesAsync()).ToList();
+                ModelState.AddModelError(string.Empty, this.localizer[ErrorConstants.InvalidLoginCredentials]);
+                return Page();
+            }
             // If we got this far, something failed, redisplay form
             return Page();
         }

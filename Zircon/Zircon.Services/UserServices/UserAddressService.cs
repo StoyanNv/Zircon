@@ -1,7 +1,7 @@
 ﻿namespace Zircon.Services.UserServices
 {
     using AutoMapper;
-    using Common;
+    using Common.Constrants;
     using Common.User.BindingModels;
     using Data;
     using Interfaces;
@@ -41,7 +41,7 @@
                 DbContext.SaveChanges();
                 dbUser.Address = address;
                 DbContext.SaveChanges();
-                return Constants.SuccessMessages.AddressAdd;
+                return SuccessConstants.AddressAdd;
             }
             var currAddress = await DbContext.Addresses.FirstOrDefaultAsync(a => a.Id == dbUser.Address.Id);
 
@@ -50,7 +50,7 @@
             currAddress.Id = id;
             DbContext.Addresses.Update(currAddress);
             DbContext.SaveChanges();
-            return Constants.SuccessMessages.AddressUpdate;
+            return SuccessConstants.AddressUpdate;
         }
     }
 }

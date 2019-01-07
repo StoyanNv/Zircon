@@ -8,15 +8,35 @@
     ".NETCoreApp,Version=v2.1": {
       "Zircon.Common/1.0.0": {
         "dependencies": {
-          "Microsoft.AspNetCore.Mvc.ViewFeatures": "2.1.1.0"
+          "Zircon.ResourceLibrary": "1.0.0",
+          "Microsoft.AspNetCore.Mvc.ViewFeatures": "2.1.1.0",
+          "Microsoft.Extensions.Localization.Abstractions": "2.1.1.0"
         },
         "runtime": {
           "Zircon.Common.dll": {}
         }
       },
+      "Zircon.ResourceLibrary/1.0.0": {
+        "runtime": {
+          "Zircon.ResourceLibrary.dll": {}
+        },
+        "resources": {
+          "bg/Zircon.ResourceLibrary.resources.dll": {
+            "locale": "bg"
+          }
+        }
+      },
       "Microsoft.AspNetCore.Mvc.ViewFeatures/2.1.1.0": {
         "runtime": {
           "Microsoft.AspNetCore.Mvc.ViewFeatures.dll": {
+            "assemblyVersion": "2.1.1.0",
+            "fileVersion": "2.1.1.18157"
+          }
+        }
+      },
+      "Microsoft.Extensions.Localization.Abstractions/2.1.1.0": {
+        "runtime": {
+          "Microsoft.Extensions.Localization.Abstractions.dll": {
             "assemblyVersion": "2.1.1.0",
             "fileVersion": "2.1.1.18157"
           }
@@ -30,7 +50,17 @@
       "serviceable": false,
       "sha512": ""
     },
+    "Zircon.ResourceLibrary/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
     "Microsoft.AspNetCore.Mvc.ViewFeatures/2.1.1.0": {
+      "type": "reference",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "Microsoft.Extensions.Localization.Abstractions/2.1.1.0": {
       "type": "reference",
       "serviceable": false,
       "sha512": ""

@@ -1,0 +1,16 @@
+C:\Zircon\Zircon\Zircon.ResourceLibrary\bin\Debug\netstandard2.0\Zircon.ResourceLibrary.deps.json
+C:\Zircon\Zircon\Zircon.ResourceLibrary\bin\Debug\netstandard2.0\Zircon.ResourceLibrary.dll
+C:\Zircon\Zircon\Zircon.ResourceLibrary\bin\Debug\netstandard2.0\Zircon.ResourceLibrary.pdb
+C:\Zircon\Zircon\Zircon.ResourceLibrary\bin\Debug\netstandard2.0\bg\Zircon.ResourceLibrary.resources.dll
+C:\Zircon\Zircon\Zircon.ResourceLibrary\bin\Debug\netstandard2.0\Microsoft.Extensions.Localization.Abstractions.dll
+C:\Zircon\Zircon\Zircon.ResourceLibrary\bin\Debug\netstandard2.0\Microsoft.Extensions.Localization.Abstractions.xml
+C:\Zircon\Zircon\Zircon.ResourceLibrary\obj\Debug\netstandard2.0\Zircon.ResourceLibrary.csprojAssemblyReference.cache
+C:\Zircon\Zircon\Zircon.ResourceLibrary\obj\Debug\netstandard2.0\Zircon.ResourceLibrary.Resources.SharedResource.bg.resources
+C:\Zircon\Zircon\Zircon.ResourceLibrary\obj\Debug\netstandard2.0\Zircon.ResourceLibrary.csproj.GenerateResource.cache
+C:\Zircon\Zircon\Zircon.ResourceLibrary\obj\Debug\netstandard2.0\Zircon.ResourceLibrary.csproj.CoreCompileInputs.cache
+C:\Zircon\Zircon\Zircon.ResourceLibrary\obj\Debug\netstandard2.0\Zircon.ResourceLibrary.AssemblyInfoInputs.cache
+C:\Zircon\Zircon\Zircon.ResourceLibrary\obj\Debug\netstandard2.0\Zircon.ResourceLibrary.AssemblyInfo.cs
+C:\Zircon\Zircon\Zircon.ResourceLibrary\obj\Debug\netstandard2.0\bg\Zircon.ResourceLibrary.resources.dll
+C:\Zircon\Zircon\Zircon.ResourceLibrary\obj\Debug\netstandard2.0\Zircon.ResourceLibrary.csproj.CopyComplete
+C:\Zircon\Zircon\Zircon.ResourceLibrary\obj\Debug\netstandard2.0\Zircon.ResourceLibrary.dll
+C:\Zircon\Zircon\Zircon.ResourceLibrary\obj\Debug\netstandard2.0\Zircon.ResourceLibrary.pdb

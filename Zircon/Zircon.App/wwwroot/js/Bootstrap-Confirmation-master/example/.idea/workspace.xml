@@ -2,18 +2,80 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="2acdda0b-a118-45db-84ae-b1c1ef70dab3" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/../../../../../.vs/Zircon/DesignTimeBuild/.dtbcache" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../../.vs/Zircon/DesignTimeBuild/.dtbcache" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../../../../../.vs/Zircon/v15/.suo" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../../.vs/Zircon/v15/.suo" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../../../../../.vs/Zircon/v15/Server/sqlite3/storage.ide" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../../.vs/Zircon/v15/Server/sqlite3/storage.ide" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../../../../../.vs/Zircon/v15/Server/sqlite3/storage.ide-shm" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../../.vs/Zircon/v15/Server/sqlite3/storage.ide-shm" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../../../../../.vs/Zircon/v15/Server/sqlite3/storage.ide-wal" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../../.vs/Zircon/v15/Server/sqlite3/storage.ide-wal" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../Areas/Admin/Controllers/AdminController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../Areas/Admin/Controllers/AdminController.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../Areas/Admin/Controllers/ProductsController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../Areas/Admin/Controllers/ProductsController.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../Areas/Admin/Pages/GiftCards/Add.cshtml" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../Areas/Admin/Pages/GiftCards/Add.cshtml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../Areas/Admin/Pages/GiftCards/Add.cshtml.cs" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../Areas/Admin/Pages/GiftCards/Add.cshtml.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../Areas/Admin/Views/Home/Index.cshtml" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../Areas/Admin/Views/Home/Index.cshtml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../Areas/Admin/Views/Products/Add.cshtml" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../Areas/Admin/Views/Products/Add.cshtml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../Areas/Admin/Views/Products/AddCategory.cshtml" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../Areas/Admin/Views/Products/AddCategory.cshtml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../Areas/Admin/Views/Products/Edit.cshtml" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../Areas/Admin/Views/Products/Edit.cshtml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../Areas/Admin/Views/Shared/DisplayTemplates/IndexProductsCardViewModel.cshtml" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../Areas/Admin/Views/Shared/DisplayTemplates/IndexProductsCardViewModel.cshtml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../Areas/Admin/Views/Shared/DisplayTemplates/UserConciseViewModel.cshtml" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../Areas/Admin/Views/Shared/DisplayTemplates/UserConciseViewModel.cshtml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../Areas/Admin/Views/Shared/DisplayTemplates/UserDetailsViewModel.cshtml" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../Areas/Admin/Views/Shared/DisplayTemplates/UserDetailsViewModel.cshtml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../Areas/Admin/Views/Shared/EditorTemplates/AddAndEditProductBindingModel.cshtml" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../Areas/Admin/Views/Shared/EditorTemplates/AddAndEditProductBindingModel.cshtml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../Areas/Admin/Views/Shared/EditorTemplates/AddCategoryBindingModel.cshtml" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../Areas/Admin/Views/Shared/EditorTemplates/AddCategoryBindingModel.cshtml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../Areas/Admin/Views/Shared/EditorTemplates/AddGiftCardBindingModel.cshtml" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../Areas/Admin/Views/Shared/EditorTemplates/AddGiftCardBindingModel.cshtml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../Areas/Admin/Views/Shared/_Layout.cshtml" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../Areas/Admin/Views/Shared/_Layout.cshtml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../Areas/Admin/Views/Users/Details.cshtml" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../Areas/Admin/Views/Users/Details.cshtml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../Areas/Identity/Pages/Account/ConfirmEmail.cshtml" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../Areas/Identity/Pages/Account/ConfirmEmail.cshtml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../Areas/Identity/Pages/Account/ConfirmEmail.cshtml.cs" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../Areas/Identity/Pages/Account/ConfirmEmail.cshtml.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../Areas/Identity/Pages/Account/ExternalLogin.cshtml" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../Areas/Identity/Pages/Account/ExternalLogin.cshtml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../Areas/Identity/Pages/Account/ExternalLogin.cshtml.cs" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../Areas/Identity/Pages/Account/ExternalLogin.cshtml.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../Areas/Identity/Pages/Account/Login.cshtml" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../Areas/Identity/Pages/Account/Login.cshtml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../Areas/Identity/Pages/Account/Login.cshtml.cs" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../Areas/Identity/Pages/Account/Login.cshtml.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../Areas/Identity/Pages/Account/Manage/AddAddress.cshtml" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../Areas/Identity/Pages/Account/Manage/AddAddress.cshtml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../Areas/Identity/Pages/Account/Manage/AddAddress.cshtml.cs" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../Areas/Identity/Pages/Account/Manage/AddAddress.cshtml.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../Areas/Identity/Pages/Account/Manage/ExternalLogins.cshtml" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../Areas/Identity/Pages/Account/Manage/ExternalLogins.cshtml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../Areas/Identity/Pages/Account/Manage/ExternalLogins.cshtml.cs" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../Areas/Identity/Pages/Account/Manage/ExternalLogins.cshtml.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../Areas/Identity/Pages/Account/Manage/Index.cshtml" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../Areas/Identity/Pages/Account/Manage/Index.cshtml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../Areas/Identity/Pages/Account/Manage/Index.cshtml.cs" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../Areas/Identity/Pages/Account/Manage/Index.cshtml.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../Areas/Identity/Pages/Account/Manage/PersonalData.cshtml" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../Areas/Identity/Pages/Account/Manage/PersonalData.cshtml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../Areas/Identity/Pages/Account/Manage/PersonalData.cshtml.cs" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../Areas/Identity/Pages/Account/Manage/PersonalData.cshtml.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../Areas/Identity/Pages/Account/Manage/_Layout.cshtml" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../Areas/Identity/Pages/Account/Manage/_Layout.cshtml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../Areas/Identity/Pages/Account/Manage/_ManageNav.cshtml" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../Areas/Identity/Pages/Account/Manage/_ManageNav.cshtml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../Areas/Identity/Pages/Account/Register.cshtml" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../Areas/Identity/Pages/Account/Register.cshtml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../Areas/Identity/Pages/Account/Register.cshtml.cs" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../Areas/Identity/Pages/Account/Register.cshtml.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../Areas/Identity/Services/SendGridEmailSender.cs" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../Areas/Identity/Services/SendGridEmailSender.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../Common/ApplicationBuilderAuthExtensions.cs" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../Common/ApplicationBuilderAuthExtensions.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../../../../Controllers/CartController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../Controllers/CartController.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../Controllers/HomeController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../Controllers/HomeController.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../Pages/Categories/All.cshtml" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../Pages/Categories/All.cshtml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../Pages/Categories/CategoryProducts.cshtml" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../Pages/Categories/CategoryProducts.cshtml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../Pages/Products/Details.cshtml" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../Pages/Products/Details.cshtml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../Startup.cs" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../Startup.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../Views/Cart/Index.cshtml" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../Views/Cart/Index.cshtml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../Views/Home/About.cshtml" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../Views/Home/About.cshtml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../Views/Home/Contact.cshtml" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../Views/Home/Contact.cshtml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../Views/Home/Index.cshtml" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../Views/Home/Index.cshtml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../Views/Shared/DisplayTemplates/IndexProductsCardViewModel.cshtml" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../Views/Shared/DisplayTemplates/IndexProductsCardViewModel.cshtml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../Views/Shared/DisplayTemplates/ShopingCartViewModel.cshtml" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../Views/Shared/DisplayTemplates/ShopingCartViewModel.cshtml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../../../../Views/Shared/_Layout.cshtml" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../Views/Shared/_Layout.cshtml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../../Views/Shared/_LoginPartial.cshtml" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../Views/Shared/_LoginPartial.cshtml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../Views/_ViewImports.cshtml" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../Views/_ViewImports.cshtml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../Zircon.App.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../Zircon.App.csproj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../Zircon.App.csproj.user" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../Zircon.App.csproj.user" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../../../../bin/Debug/netcoreapp2.1/Zircon.App.Views.dll" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../bin/Debug/netcoreapp2.1/Zircon.App.Views.dll" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../../../../bin/Debug/netcoreapp2.1/Zircon.App.Views.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../bin/Debug/netcoreapp2.1/Zircon.App.Views.pdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../bin/Debug/netcoreapp2.1/Zircon.App.deps.json" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../bin/Debug/netcoreapp2.1/Zircon.App.deps.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../../../../bin/Debug/netcoreapp2.1/Zircon.App.dll" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../bin/Debug/netcoreapp2.1/Zircon.App.dll" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../../../../bin/Debug/netcoreapp2.1/Zircon.App.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../bin/Debug/netcoreapp2.1/Zircon.App.pdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../bin/Debug/netcoreapp2.1/Zircon.Common.dll" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../bin/Debug/netcoreapp2.1/Zircon.Common.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../bin/Debug/netcoreapp2.1/Zircon.Common.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../bin/Debug/netcoreapp2.1/Zircon.Common.pdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../bin/Debug/netcoreapp2.1/Zircon.Data.dll" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../bin/Debug/netcoreapp2.1/Zircon.Data.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../bin/Debug/netcoreapp2.1/Zircon.Data.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../bin/Debug/netcoreapp2.1/Zircon.Data.pdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../bin/Debug/netcoreapp2.1/Zircon.Models.dll" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../bin/Debug/netcoreapp2.1/Zircon.Models.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../bin/Debug/netcoreapp2.1/Zircon.Models.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../bin/Debug/netcoreapp2.1/Zircon.Models.pdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../bin/Debug/netcoreapp2.1/Zircon.Services.dll" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../bin/Debug/netcoreapp2.1/Zircon.Services.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../bin/Debug/netcoreapp2.1/Zircon.Services.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../bin/Debug/netcoreapp2.1/Zircon.Services.pdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../obj/Debug/netcoreapp2.1/Razor/Areas/Admin/Pages/GiftCards/Add.g.cshtml.cs" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../obj/Debug/netcoreapp2.1/Razor/Areas/Admin/Pages/GiftCards/Add.g.cshtml.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../obj/Debug/netcoreapp2.1/Razor/Areas/Admin/Views/Home/Index.g.cshtml.cs" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../obj/Debug/netcoreapp2.1/Razor/Areas/Admin/Views/Home/Index.g.cshtml.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../../../../obj/Debug/netcoreapp2.1/Razor/Areas/Admin/Views/Products/Add.g.cshtml.cs" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../obj/Debug/netcoreapp2.1/Razor/Areas/Admin/Views/Products/Add.g.cshtml.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../obj/Debug/netcoreapp2.1/Razor/Areas/Admin/Views/Products/AddCategory.g.cshtml.cs" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../obj/Debug/netcoreapp2.1/Razor/Areas/Admin/Views/Products/AddCategory.g.cshtml.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../../../../obj/Debug/netcoreapp2.1/Razor/Areas/Admin/Views/Products/Edit.g.cshtml.cs" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../obj/Debug/netcoreapp2.1/Razor/Areas/Admin/Views/Products/Edit.g.cshtml.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../../../../obj/Debug/netcoreapp2.1/Razor/Areas/Admin/Views/Shared/DisplayTemplates/IndexProductsCardViewModel.g.cshtml.cs" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../obj/Debug/netcoreapp2.1/Razor/Areas/Admin/Views/Shared/DisplayTemplates/IndexProductsCardViewModel.g.cshtml.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../../../../obj/Debug/netcoreapp2.1/Razor/Areas/Admin/Views/Shared/DisplayTemplates/UserConciseViewModel.g.cshtml.cs" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../obj/Debug/netcoreapp2.1/Razor/Areas/Admin/Views/Shared/DisplayTemplates/UserConciseViewModel.g.cshtml.cs" afterDir="false" />
@@ -22,6 +84,8 @@
       <change beforePath="$PROJECT_DIR$/../../../../obj/Debug/netcoreapp2.1/Razor/Areas/Admin/Views/Shared/EditorTemplates/AddCategoryBindingModel.g.cshtml.cs" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../obj/Debug/netcoreapp2.1/Razor/Areas/Admin/Views/Shared/EditorTemplates/AddCategoryBindingModel.g.cshtml.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../../../../obj/Debug/netcoreapp2.1/Razor/Areas/Admin/Views/Shared/EditorTemplates/AddGiftCardBindingModel.g.cshtml.cs" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../obj/Debug/netcoreapp2.1/Razor/Areas/Admin/Views/Shared/EditorTemplates/AddGiftCardBindingModel.g.cshtml.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../../../../obj/Debug/netcoreapp2.1/Razor/Areas/Admin/Views/Shared/_Layout.g.cshtml.cs" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../obj/Debug/netcoreapp2.1/Razor/Areas/Admin/Views/Shared/_Layout.g.cshtml.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../obj/Debug/netcoreapp2.1/Razor/Areas/Admin/Views/Users/Details.g.cshtml.cs" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../obj/Debug/netcoreapp2.1/Razor/Areas/Admin/Views/Users/Details.g.cshtml.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../obj/Debug/netcoreapp2.1/Razor/Areas/Identity/Pages/Account/ConfirmEmail.g.cshtml.cs" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../obj/Debug/netcoreapp2.1/Razor/Areas/Identity/Pages/Account/ConfirmEmail.g.cshtml.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../../../../obj/Debug/netcoreapp2.1/Razor/Areas/Identity/Pages/Account/ExternalLogin.g.cshtml.cs" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../obj/Debug/netcoreapp2.1/Razor/Areas/Identity/Pages/Account/ExternalLogin.g.cshtml.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../../../../obj/Debug/netcoreapp2.1/Razor/Areas/Identity/Pages/Account/Login.g.cshtml.cs" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../obj/Debug/netcoreapp2.1/Razor/Areas/Identity/Pages/Account/Login.g.cshtml.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../../../../obj/Debug/netcoreapp2.1/Razor/Areas/Identity/Pages/Account/Manage/AddAddress.g.cshtml.cs" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../obj/Debug/netcoreapp2.1/Razor/Areas/Identity/Pages/Account/Manage/AddAddress.g.cshtml.cs" afterDir="false" />
@@ -32,20 +96,139 @@
       <change beforePath="$PROJECT_DIR$/../../../../obj/Debug/netcoreapp2.1/Razor/Areas/Identity/Pages/Account/Manage/_ManageNav.g.cshtml.cs" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../obj/Debug/netcoreapp2.1/Razor/Areas/Identity/Pages/Account/Manage/_ManageNav.g.cshtml.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../../../../obj/Debug/netcoreapp2.1/Razor/Areas/Identity/Pages/Account/Register.g.cshtml.cs" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../obj/Debug/netcoreapp2.1/Razor/Areas/Identity/Pages/Account/Register.g.cshtml.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../../../../obj/Debug/netcoreapp2.1/Razor/Areas/Identity/Pages/_ValidationScriptsPartial.g.cshtml.cs" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../obj/Debug/netcoreapp2.1/Razor/Areas/Identity/Pages/_ValidationScriptsPartial.g.cshtml.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../obj/Debug/netcoreapp2.1/Razor/Pages/Categories/All.g.cshtml.cs" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../obj/Debug/netcoreapp2.1/Razor/Pages/Categories/All.g.cshtml.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../obj/Debug/netcoreapp2.1/Razor/Pages/Categories/CategoryProducts.g.cshtml.cs" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../obj/Debug/netcoreapp2.1/Razor/Pages/Categories/CategoryProducts.g.cshtml.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../../../../obj/Debug/netcoreapp2.1/Razor/Pages/Products/Details.g.cshtml.cs" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../obj/Debug/netcoreapp2.1/Razor/Pages/Products/Details.g.cshtml.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../../../../obj/Debug/netcoreapp2.1/Razor/Pages/Shared/DisplayTemplates/AllCategoriesViewModel.g.cshtml.cs" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../obj/Debug/netcoreapp2.1/Razor/Pages/Shared/DisplayTemplates/AllCategoriesViewModel.g.cshtml.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../../../../obj/Debug/netcoreapp2.1/Razor/Pages/Shared/_ValidationScriptsPartial.g.cshtml.cs" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../obj/Debug/netcoreapp2.1/Razor/Pages/Shared/_ValidationScriptsPartial.g.cshtml.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../obj/Debug/netcoreapp2.1/Razor/Views/Cart/FinishOrder.g.cshtml.cs" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../obj/Debug/netcoreapp2.1/Razor/Views/Cart/FinishOrder.g.cshtml.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../../../../obj/Debug/netcoreapp2.1/Razor/Views/Cart/Index.g.cshtml.cs" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../obj/Debug/netcoreapp2.1/Razor/Views/Cart/Index.g.cshtml.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../obj/Debug/netcoreapp2.1/Razor/Views/Home/About.g.cshtml.cs" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../obj/Debug/netcoreapp2.1/Razor/Views/Home/About.g.cshtml.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../obj/Debug/netcoreapp2.1/Razor/Views/Home/Contact.g.cshtml.cs" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../obj/Debug/netcoreapp2.1/Razor/Views/Home/Contact.g.cshtml.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../obj/Debug/netcoreapp2.1/Razor/Views/Home/Index.g.cshtml.cs" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../obj/Debug/netcoreapp2.1/Razor/Views/Home/Index.g.cshtml.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../obj/Debug/netcoreapp2.1/Razor/Views/Home/Privacy.g.cshtml.cs" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../obj/Debug/netcoreapp2.1/Razor/Views/Home/Privacy.g.cshtml.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../../../../obj/Debug/netcoreapp2.1/Razor/Views/Shared/DisplayTemplates/IndexProductsCardViewModel.g.cshtml.cs" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../obj/Debug/netcoreapp2.1/Razor/Views/Shared/DisplayTemplates/IndexProductsCardViewModel.g.cshtml.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../../../../obj/Debug/netcoreapp2.1/Razor/Views/Shared/DisplayTemplates/ShopingCartViewModel.g.cshtml.cs" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../obj/Debug/netcoreapp2.1/Razor/Views/Shared/DisplayTemplates/ShopingCartViewModel.g.cshtml.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../obj/Debug/netcoreapp2.1/Razor/Views/Shared/Error.g.cshtml.cs" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../obj/Debug/netcoreapp2.1/Razor/Views/Shared/Error.g.cshtml.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../../../../obj/Debug/netcoreapp2.1/Razor/Views/Shared/_CookieConsentPartial.g.cshtml.cs" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../obj/Debug/netcoreapp2.1/Razor/Views/Shared/_CookieConsentPartial.g.cshtml.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../../../../obj/Debug/netcoreapp2.1/Razor/Views/Shared/_Layout.g.cshtml.cs" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../obj/Debug/netcoreapp2.1/Razor/Views/Shared/_Layout.g.cshtml.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../../../../obj/Debug/netcoreapp2.1/Razor/Views/Shared/_LoginPartial.g.cshtml.cs" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../obj/Debug/netcoreapp2.1/Razor/Views/Shared/_LoginPartial.g.cshtml.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../../../../obj/Debug/netcoreapp2.1/Razor/Views/Shared/_ValidationScriptsPartial.g.cshtml.cs" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../obj/Debug/netcoreapp2.1/Razor/Views/Shared/_ValidationScriptsPartial.g.cshtml.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../obj/Debug/netcoreapp2.1/Razor/Views/_ViewImports.g.cshtml.cs" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../obj/Debug/netcoreapp2.1/Razor/Views/_ViewImports.g.cshtml.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../obj/Debug/netcoreapp2.1/Razor/Views/_ViewStart.g.cshtml.cs" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../obj/Debug/netcoreapp2.1/Razor/Views/_ViewStart.g.cshtml.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../obj/Debug/netcoreapp2.1/Zircon.App.RazorCoreGenerate.cache" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../obj/Debug/netcoreapp2.1/Zircon.App.RazorCoreGenerate.cache" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../../../../obj/Debug/netcoreapp2.1/Zircon.App.Views.dll" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../obj/Debug/netcoreapp2.1/Zircon.App.Views.dll" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../../../../obj/Debug/netcoreapp2.1/Zircon.App.Views.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../obj/Debug/netcoreapp2.1/Zircon.App.Views.pdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../obj/Debug/netcoreapp2.1/Zircon.App.assets.cache" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../obj/Debug/netcoreapp2.1/Zircon.App.assets.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../obj/Debug/netcoreapp2.1/Zircon.App.csproj.CoreCompileInputs.cache" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../obj/Debug/netcoreapp2.1/Zircon.App.csproj.CoreCompileInputs.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../obj/Debug/netcoreapp2.1/Zircon.App.csproj.FileListAbsolute.txt" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../obj/Debug/netcoreapp2.1/Zircon.App.csproj.FileListAbsolute.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../obj/Debug/netcoreapp2.1/Zircon.App.csprojAssemblyReference.cache" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../obj/Debug/netcoreapp2.1/Zircon.App.csprojAssemblyReference.cache" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../../../../obj/Debug/netcoreapp2.1/Zircon.App.dll" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../obj/Debug/netcoreapp2.1/Zircon.App.dll" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../../../../obj/Debug/netcoreapp2.1/Zircon.App.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../obj/Debug/netcoreapp2.1/Zircon.App.pdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../obj/Zircon.App.csproj.nuget.cache" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../obj/Zircon.App.csproj.nuget.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../obj/Zircon.App.csproj.nuget.g.props" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../obj/Zircon.App.csproj.nuget.g.props" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../obj/project.assets.json" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../obj/project.assets.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../Zircon.Common/Admin/BindingModels/AddAndEditProductBindingModel.cs" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../../Zircon.Common/Admin/BindingModels/AddAndEditProductBindingModel.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../Zircon.Common/Admin/BindingModels/AddCategoryBindingModel.cs" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../../Zircon.Common/Admin/BindingModels/AddCategoryBindingModel.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../Zircon.Common/Admin/BindingModels/AddGiftCardBindingModel.cs" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../../Zircon.Common/Admin/BindingModels/AddGiftCardBindingModel.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../Zircon.Common/Constants.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../Zircon.Common/User/BindingModels/AddAddressBindingModel.cs" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../../Zircon.Common/User/BindingModels/AddAddressBindingModel.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../Zircon.Common/User/BindingModels/LoginBindingModel.cs" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../../Zircon.Common/User/BindingModels/LoginBindingModel.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../Zircon.Common/User/BindingModels/RegisterBindingModel.cs" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../../Zircon.Common/User/BindingModels/RegisterBindingModel.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../Zircon.Common/Zircon.Common.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../../Zircon.Common/Zircon.Common.csproj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../Zircon.Common/bin/Debug/netcoreapp2.1/Zircon.Common.deps.json" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../../Zircon.Common/bin/Debug/netcoreapp2.1/Zircon.Common.deps.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../Zircon.Common/bin/Debug/netcoreapp2.1/Zircon.Common.dll" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../../Zircon.Common/bin/Debug/netcoreapp2.1/Zircon.Common.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../Zircon.Common/bin/Debug/netcoreapp2.1/Zircon.Common.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../../Zircon.Common/bin/Debug/netcoreapp2.1/Zircon.Common.pdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../Zircon.Common/obj/Debug/netcoreapp2.1/Zircon.Common.csproj.CoreCompileInputs.cache" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../../Zircon.Common/obj/Debug/netcoreapp2.1/Zircon.Common.csproj.CoreCompileInputs.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../Zircon.Common/obj/Debug/netcoreapp2.1/Zircon.Common.csproj.FileListAbsolute.txt" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../../Zircon.Common/obj/Debug/netcoreapp2.1/Zircon.Common.csproj.FileListAbsolute.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../Zircon.Common/obj/Debug/netcoreapp2.1/Zircon.Common.csprojAssemblyReference.cache" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../../Zircon.Common/obj/Debug/netcoreapp2.1/Zircon.Common.csprojAssemblyReference.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../Zircon.Common/obj/Debug/netcoreapp2.1/Zircon.Common.dll" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../../Zircon.Common/obj/Debug/netcoreapp2.1/Zircon.Common.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../Zircon.Common/obj/Debug/netcoreapp2.1/Zircon.Common.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../../Zircon.Common/obj/Debug/netcoreapp2.1/Zircon.Common.pdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../Zircon.Common/obj/Zircon.Common.csproj.nuget.cache" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../../Zircon.Common/obj/Zircon.Common.csproj.nuget.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../Zircon.Common/obj/Zircon.Common.csproj.nuget.g.props" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../../Zircon.Common/obj/Zircon.Common.csproj.nuget.g.props" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../Zircon.Common/obj/project.assets.json" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../../Zircon.Common/obj/project.assets.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../Zircon.Data/ZirconDbContext.cs" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../../Zircon.Data/ZirconDbContext.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../Zircon.Data/bin/Debug/netcoreapp2.1/Zircon.Common.dll" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../../Zircon.Data/bin/Debug/netcoreapp2.1/Zircon.Common.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../Zircon.Data/bin/Debug/netcoreapp2.1/Zircon.Common.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../../Zircon.Data/bin/Debug/netcoreapp2.1/Zircon.Common.pdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../Zircon.Data/bin/Debug/netcoreapp2.1/Zircon.Data.deps.json" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../../Zircon.Data/bin/Debug/netcoreapp2.1/Zircon.Data.deps.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../Zircon.Data/bin/Debug/netcoreapp2.1/Zircon.Data.dll" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../../Zircon.Data/bin/Debug/netcoreapp2.1/Zircon.Data.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../Zircon.Data/bin/Debug/netcoreapp2.1/Zircon.Data.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../../Zircon.Data/bin/Debug/netcoreapp2.1/Zircon.Data.pdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../Zircon.Data/bin/Debug/netcoreapp2.1/Zircon.Models.dll" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../../Zircon.Data/bin/Debug/netcoreapp2.1/Zircon.Models.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../Zircon.Data/bin/Debug/netcoreapp2.1/Zircon.Models.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../../Zircon.Data/bin/Debug/netcoreapp2.1/Zircon.Models.pdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../Zircon.Data/obj/Debug/netcoreapp2.1/Zircon.Data.assets.cache" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../../Zircon.Data/obj/Debug/netcoreapp2.1/Zircon.Data.assets.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../Zircon.Data/obj/Debug/netcoreapp2.1/Zircon.Data.csproj.CoreCompileInputs.cache" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../../Zircon.Data/obj/Debug/netcoreapp2.1/Zircon.Data.csproj.CoreCompileInputs.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../Zircon.Data/obj/Debug/netcoreapp2.1/Zircon.Data.csproj.FileListAbsolute.txt" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../../Zircon.Data/obj/Debug/netcoreapp2.1/Zircon.Data.csproj.FileListAbsolute.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../Zircon.Data/obj/Debug/netcoreapp2.1/Zircon.Data.csprojAssemblyReference.cache" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../../Zircon.Data/obj/Debug/netcoreapp2.1/Zircon.Data.csprojAssemblyReference.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../Zircon.Data/obj/Debug/netcoreapp2.1/Zircon.Data.dll" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../../Zircon.Data/obj/Debug/netcoreapp2.1/Zircon.Data.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../Zircon.Data/obj/Debug/netcoreapp2.1/Zircon.Data.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../../Zircon.Data/obj/Debug/netcoreapp2.1/Zircon.Data.pdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../Zircon.Data/obj/Zircon.Data.csproj.nuget.cache" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../../Zircon.Data/obj/Zircon.Data.csproj.nuget.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../Zircon.Data/obj/Zircon.Data.csproj.nuget.g.props" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../../Zircon.Data/obj/Zircon.Data.csproj.nuget.g.props" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../Zircon.Data/obj/project.assets.json" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../../Zircon.Data/obj/project.assets.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../Zircon.Models/GiftCard.cs" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../../Zircon.Models/GiftCard.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../Zircon.Models/Product.cs" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../../Zircon.Models/Product.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../Zircon.Models/User.cs" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../../Zircon.Models/User.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../Zircon.Models/bin/Debug/netcoreapp2.1/Zircon.Common.dll" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../../Zircon.Models/bin/Debug/netcoreapp2.1/Zircon.Common.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../Zircon.Models/bin/Debug/netcoreapp2.1/Zircon.Common.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../../Zircon.Models/bin/Debug/netcoreapp2.1/Zircon.Common.pdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../Zircon.Models/bin/Debug/netcoreapp2.1/Zircon.Models.deps.json" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../../Zircon.Models/bin/Debug/netcoreapp2.1/Zircon.Models.deps.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../Zircon.Models/bin/Debug/netcoreapp2.1/Zircon.Models.dll" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../../Zircon.Models/bin/Debug/netcoreapp2.1/Zircon.Models.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../Zircon.Models/bin/Debug/netcoreapp2.1/Zircon.Models.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../../Zircon.Models/bin/Debug/netcoreapp2.1/Zircon.Models.pdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../Zircon.Models/obj/Debug/netcoreapp2.1/Zircon.Models.assets.cache" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../../Zircon.Models/obj/Debug/netcoreapp2.1/Zircon.Models.assets.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../Zircon.Models/obj/Debug/netcoreapp2.1/Zircon.Models.csproj.CoreCompileInputs.cache" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../../Zircon.Models/obj/Debug/netcoreapp2.1/Zircon.Models.csproj.CoreCompileInputs.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../Zircon.Models/obj/Debug/netcoreapp2.1/Zircon.Models.csproj.FileListAbsolute.txt" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../../Zircon.Models/obj/Debug/netcoreapp2.1/Zircon.Models.csproj.FileListAbsolute.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../Zircon.Models/obj/Debug/netcoreapp2.1/Zircon.Models.csprojAssemblyReference.cache" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../../Zircon.Models/obj/Debug/netcoreapp2.1/Zircon.Models.csprojAssemblyReference.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../Zircon.Models/obj/Debug/netcoreapp2.1/Zircon.Models.dll" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../../Zircon.Models/obj/Debug/netcoreapp2.1/Zircon.Models.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../Zircon.Models/obj/Debug/netcoreapp2.1/Zircon.Models.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../../Zircon.Models/obj/Debug/netcoreapp2.1/Zircon.Models.pdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../Zircon.Models/obj/Zircon.Models.csproj.nuget.cache" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../../Zircon.Models/obj/Zircon.Models.csproj.nuget.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../Zircon.Models/obj/Zircon.Models.csproj.nuget.g.props" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../../Zircon.Models/obj/Zircon.Models.csproj.nuget.g.props" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../Zircon.Models/obj/project.assets.json" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../../Zircon.Models/obj/project.assets.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../Zircon.Services/UserServices/CategoriesService.cs" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../../Zircon.Services/UserServices/CategoriesService.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../Zircon.Services/UserServices/UserAddressService.cs" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../../Zircon.Services/UserServices/UserAddressService.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../Zircon.Services/bin/Debug/netcoreapp2.1/Zircon.Common.dll" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../../Zircon.Services/bin/Debug/netcoreapp2.1/Zircon.Common.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../Zircon.Services/bin/Debug/netcoreapp2.1/Zircon.Common.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../../Zircon.Services/bin/Debug/netcoreapp2.1/Zircon.Common.pdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../Zircon.Services/bin/Debug/netcoreapp2.1/Zircon.Data.dll" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../../Zircon.Services/bin/Debug/netcoreapp2.1/Zircon.Data.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../Zircon.Services/bin/Debug/netcoreapp2.1/Zircon.Data.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../../Zircon.Services/bin/Debug/netcoreapp2.1/Zircon.Data.pdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../Zircon.Services/bin/Debug/netcoreapp2.1/Zircon.Models.dll" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../../Zircon.Services/bin/Debug/netcoreapp2.1/Zircon.Models.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../Zircon.Services/bin/Debug/netcoreapp2.1/Zircon.Models.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../../Zircon.Services/bin/Debug/netcoreapp2.1/Zircon.Models.pdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../Zircon.Services/bin/Debug/netcoreapp2.1/Zircon.Services.deps.json" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../../Zircon.Services/bin/Debug/netcoreapp2.1/Zircon.Services.deps.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../Zircon.Services/bin/Debug/netcoreapp2.1/Zircon.Services.dll" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../../Zircon.Services/bin/Debug/netcoreapp2.1/Zircon.Services.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../Zircon.Services/bin/Debug/netcoreapp2.1/Zircon.Services.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../../Zircon.Services/bin/Debug/netcoreapp2.1/Zircon.Services.pdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../Zircon.Services/obj/Debug/netcoreapp2.1/Zircon.Services.assets.cache" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../../Zircon.Services/obj/Debug/netcoreapp2.1/Zircon.Services.assets.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../Zircon.Services/obj/Debug/netcoreapp2.1/Zircon.Services.csproj.CoreCompileInputs.cache" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../../Zircon.Services/obj/Debug/netcoreapp2.1/Zircon.Services.csproj.CoreCompileInputs.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../Zircon.Services/obj/Debug/netcoreapp2.1/Zircon.Services.csproj.FileListAbsolute.txt" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../../Zircon.Services/obj/Debug/netcoreapp2.1/Zircon.Services.csproj.FileListAbsolute.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../Zircon.Services/obj/Debug/netcoreapp2.1/Zircon.Services.csprojAssemblyReference.cache" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../../Zircon.Services/obj/Debug/netcoreapp2.1/Zircon.Services.csprojAssemblyReference.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../Zircon.Services/obj/Debug/netcoreapp2.1/Zircon.Services.dll" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../../Zircon.Services/obj/Debug/netcoreapp2.1/Zircon.Services.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../Zircon.Services/obj/Debug/netcoreapp2.1/Zircon.Services.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../../Zircon.Services/obj/Debug/netcoreapp2.1/Zircon.Services.pdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../Zircon.Services/obj/Zircon.Services.csproj.nuget.cache" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../../Zircon.Services/obj/Zircon.Services.csproj.nuget.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../Zircon.Services/obj/Zircon.Services.csproj.nuget.g.props" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../../Zircon.Services/obj/Zircon.Services.csproj.nuget.g.props" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../Zircon.Services/obj/project.assets.json" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../../Zircon.Services/obj/project.assets.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../Zircon.Tests/Services/AdminProductsServiceTests.cs" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../../Zircon.Tests/Services/AdminProductsServiceTests.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../Zircon.Tests/bin/Debug/netcoreapp2.1/Zircon.Common.deps.json" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../../Zircon.Tests/bin/Debug/netcoreapp2.1/Zircon.Common.deps.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../Zircon.Tests/bin/Debug/netcoreapp2.1/Zircon.Common.dll" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../../Zircon.Tests/bin/Debug/netcoreapp2.1/Zircon.Common.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../Zircon.Tests/bin/Debug/netcoreapp2.1/Zircon.Common.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../../Zircon.Tests/bin/Debug/netcoreapp2.1/Zircon.Common.pdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../Zircon.Tests/bin/Debug/netcoreapp2.1/Zircon.Data.deps.json" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../../Zircon.Tests/bin/Debug/netcoreapp2.1/Zircon.Data.deps.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../Zircon.Tests/bin/Debug/netcoreapp2.1/Zircon.Data.dll" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../../Zircon.Tests/bin/Debug/netcoreapp2.1/Zircon.Data.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../Zircon.Tests/bin/Debug/netcoreapp2.1/Zircon.Data.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../../Zircon.Tests/bin/Debug/netcoreapp2.1/Zircon.Data.pdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../Zircon.Tests/bin/Debug/netcoreapp2.1/Zircon.Models.deps.json" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../../Zircon.Tests/bin/Debug/netcoreapp2.1/Zircon.Models.deps.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../Zircon.Tests/bin/Debug/netcoreapp2.1/Zircon.Models.dll" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../../Zircon.Tests/bin/Debug/netcoreapp2.1/Zircon.Models.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../Zircon.Tests/bin/Debug/netcoreapp2.1/Zircon.Models.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../../Zircon.Tests/bin/Debug/netcoreapp2.1/Zircon.Models.pdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../Zircon.Tests/bin/Debug/netcoreapp2.1/Zircon.Services.deps.json" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../../Zircon.Tests/bin/Debug/netcoreapp2.1/Zircon.Services.deps.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../Zircon.Tests/bin/Debug/netcoreapp2.1/Zircon.Services.dll" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../../Zircon.Tests/bin/Debug/netcoreapp2.1/Zircon.Services.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../Zircon.Tests/bin/Debug/netcoreapp2.1/Zircon.Services.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../../Zircon.Tests/bin/Debug/netcoreapp2.1/Zircon.Services.pdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../Zircon.Tests/bin/Debug/netcoreapp2.1/Zircon.Tests.deps.json" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../../Zircon.Tests/bin/Debug/netcoreapp2.1/Zircon.Tests.deps.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../Zircon.Tests/bin/Debug/netcoreapp2.1/Zircon.Tests.dll" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../../Zircon.Tests/bin/Debug/netcoreapp2.1/Zircon.Tests.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../Zircon.Tests/bin/Debug/netcoreapp2.1/Zircon.Tests.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../../Zircon.Tests/bin/Debug/netcoreapp2.1/Zircon.Tests.pdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../Zircon.Tests/obj/Debug/netcoreapp2.1/Zircon.Tests.assets.cache" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../../Zircon.Tests/obj/Debug/netcoreapp2.1/Zircon.Tests.assets.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../Zircon.Tests/obj/Debug/netcoreapp2.1/Zircon.Tests.csproj.CoreCompileInputs.cache" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../../Zircon.Tests/obj/Debug/netcoreapp2.1/Zircon.Tests.csproj.CoreCompileInputs.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../Zircon.Tests/obj/Debug/netcoreapp2.1/Zircon.Tests.csproj.FileListAbsolute.txt" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../../Zircon.Tests/obj/Debug/netcoreapp2.1/Zircon.Tests.csproj.FileListAbsolute.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../Zircon.Tests/obj/Debug/netcoreapp2.1/Zircon.Tests.csprojAssemblyReference.cache" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../../Zircon.Tests/obj/Debug/netcoreapp2.1/Zircon.Tests.csprojAssemblyReference.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../Zircon.Tests/obj/Debug/netcoreapp2.1/Zircon.Tests.dll" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../../Zircon.Tests/obj/Debug/netcoreapp2.1/Zircon.Tests.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../Zircon.Tests/obj/Debug/netcoreapp2.1/Zircon.Tests.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../../Zircon.Tests/obj/Debug/netcoreapp2.1/Zircon.Tests.pdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../Zircon.Tests/obj/Zircon.Tests.csproj.nuget.cache" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../../Zircon.Tests/obj/Zircon.Tests.csproj.nuget.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../Zircon.Tests/obj/Zircon.Tests.csproj.nuget.g.props" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../../Zircon.Tests/obj/Zircon.Tests.csproj.nuget.g.props" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../Zircon.Tests/obj/project.assets.json" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../../Zircon.Tests/obj/project.assets.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../Zircon.sln" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../../Zircon.sln" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -60,12 +243,16 @@
     <session id="1967043052">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="5" />
-          <entry key="project.open.time.3" value="1" />
-          <entry key="project.open.time.4" value="1" />
+          <entry key="project.closed" value="16" />
+          <entry key="project.open.time.12" value="1" />
+          <entry key="project.open.time.3" value="2" />
+          <entry key="project.open.time.4" value="3" />
+          <entry key="project.open.time.5" value="3" />
           <entry key="project.open.time.6" value="2" />
-          <entry key="project.open.time.8" value="1" />
-          <entry key="project.opened" value="5" />
+          <entry key="project.open.time.7" value="3" />
+          <entry key="project.open.time.8" value="2" />
+          <entry key="project.open.time.9" value="1" />
+          <entry key="project.opened" value="17" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
@@ -80,12 +267,12 @@
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="html" value="120" />
+          <entry key="html" value="122" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="HTML" value="120" />
+          <entry key="HTML" value="122" />
         </counts>
       </usages-collector>
     </session>
@@ -95,8 +282,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="372">
-              <caret line="89" column="47" selection-start-line="89" selection-start-column="47" selection-end-line="89" selection-end-column="47" />
+            <state relative-caret-position="234">
+              <caret line="83" column="67" selection-start-line="83" selection-start-column="67" selection-end-line="83" selection-end-column="67" />
             </state>
           </provider>
         </entry>
@@ -177,11 +364,23 @@
       <workItem from="1539471285656" duration="598000" />
       <workItem from="1540212008861" duration="100000" />
       <workItem from="1540301272307" duration="4000" />
+      <workItem from="1540847579633" duration="118000" />
+      <workItem from="1541273054061" duration="9000" />
+      <workItem from="1541928238205" duration="598000" />
+      <workItem from="1542461389944" duration="599000" />
+      <workItem from="1543329607006" duration="599000" />
+      <workItem from="1543411992040" duration="601000" />
+      <workItem from="1543568197126" duration="658000" />
+      <workItem from="1544722767973" duration="9000" />
+      <workItem from="1544903202278" duration="12000" />
+      <workItem from="1545064458309" duration="601000" />
+      <workItem from="1545143571973" duration="13000" />
+      <workItem from="1546433048899" duration="6000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="1417000" />
+    <option name="totallyTimeSpent" value="5240000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
@@ -214,8 +413,8 @@
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="372">
-          <caret line="89" column="47" selection-start-line="89" selection-start-column="47" selection-end-line="89" selection-end-column="47" />
+        <state relative-caret-position="234">
+          <caret line="83" column="67" selection-start-line="83" selection-start-column="67" selection-end-line="83" selection-end-column="67" />
         </state>
       </provider>
     </entry>

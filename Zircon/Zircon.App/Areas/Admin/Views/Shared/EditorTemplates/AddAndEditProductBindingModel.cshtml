@@ -1,4 +1,7 @@
 ﻿@model AddAndEditProductBindingModel
+@using Microsoft.AspNetCore.Mvc.Localization
+
+@inject IViewLocalizer Localizer
 <div class="form-group">
     <label asp-for="CategoryId" class="control-label col-sm-2"></label>
     <div class="col-sm-10">
@@ -10,12 +13,7 @@
 @Html.FormGroupFor(model => model.Price)
 @Html.FormGroupFor(model => model.PictureUrl)
 @Html.FormGroupFor(model => model.Weight)
-<div class="form-group">
-    <div class="col-sm-10 col-sm-push-2">
-        <input type="submit" value="Done" class="btn btn-success" />
-        <a asp-area="Admin" asp-controller="Home" asp-action="Index" class="btn bg-warning btn-default">Cancel</a>
-    </div>
-</div>
+
 @section Scripts{
     <partial name="_ValidationScriptsPartial" />
 }

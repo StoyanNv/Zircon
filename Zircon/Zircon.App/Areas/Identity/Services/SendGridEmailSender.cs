@@ -5,7 +5,7 @@
     using SendGrid;
     using SendGrid.Helpers.Mail;
     using System.Threading.Tasks;
-    using Zircon.Common;
+    using Zircon.Common.Constrants;
 
     public class SendGridEmailSender : IEmailSender
     {

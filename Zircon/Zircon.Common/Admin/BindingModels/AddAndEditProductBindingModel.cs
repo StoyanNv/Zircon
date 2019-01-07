@@ -1,5 +1,6 @@
 ﻿namespace Zircon.Common.Admin.BindingModels
 {
+    using Constrants;
     using Microsoft.AspNetCore.Mvc.Rendering;
     using System.Collections.Generic;
     using System.ComponentModel.DataAnnotations;
@@ -12,25 +13,28 @@
         }
 
         public int Id { get; set; }
-        [Required]
+        [Required(ErrorMessage = ErrorConstants.RequiredField)]
+        [Display(Name = AttributeConstraintsConstants.NameDisplay)]
         public string Name { get; set; }
 
-        [Display(Name = Constants.AttributeConstraint.PictureUrlDisplay)]
+        [Display(Name = AttributeConstraintsConstants.PictureUrlDisplay)]
         [Url]
-        [Required]
+        [Required(ErrorMessage = ErrorConstants.RequiredField)]
         public string PictureUrl { get; set; }
 
-        [Required]
-        [Range(Constants.AttributeConstraint.PriceMinValue, int.MaxValue)]
-        public decimal Price { get; set; }
+        [Required(ErrorMessage = ErrorConstants.RequiredField)]
+        [Range(AttributeConstraintsConstants.PriceMinValue, int.MaxValue, ErrorMessage = ErrorConstants.RangeError)]
+        [Display(Name = AttributeConstraintsConstants.PriceDisplay)]
+        public decimal? Price { get; set; }
 
-        [Required(ErrorMessage = Constants.ErrorMessages.ProductCategoryIsRequired)]
-        [Display(Name = Constants.AttributeConstraint.CategoryDisplay)]
+        [Required(ErrorMessage = ErrorConstants.ProductCategoryIsRequired)]
+        [Display(Name = AttributeConstraintsConstants.CategoryDisplay)]
         public string CategoryId { get; set; }
 
-        [Required]
-        [Range(Constants.AttributeConstraint.WeightMinValue, int.MaxValue)]
-        public double Weight { get; set; }
+        [Display(Name = AttributeConstraintsConstants.WeightDisplay)]
+        [Required(ErrorMessage = ErrorConstants.RequiredField)]
+        [Range(AttributeConstraintsConstants.WeightMinValue, int.MaxValue, ErrorMessage = ErrorConstants.RangeError)]
+        public double? Weight { get; set; }
 
         public IEnumerable<SelectListItem> Categories { get; set; }
     }

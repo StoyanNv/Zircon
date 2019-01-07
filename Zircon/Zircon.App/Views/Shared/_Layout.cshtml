@@ -1,9 +1,13 @@
-﻿<!DOCTYPE html>
+﻿@using Microsoft.AspNetCore.Mvc.Localization
+
+@inject IViewLocalizer LayoutLocalizer
+
+<!DOCTYPE html>
 <html>
 <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>@ViewData["Title"] - Zircon</title>
+    <title>@ViewData["Title"] - @this.LayoutLocalizer["Zircon"]</title>
 
     <environment include="Development">
         <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
@@ -23,11 +27,11 @@
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
         @if (User.IsInRole("Administrator"))
         {
-            <a asp-area="Admin" asp-controller="Home" asp-action="Index" class="navbar-brand">Zircon</a>
+            <a asp-area="Admin" asp-controller="Home" asp-action="Index" class="navbar-brand">@LayoutLocalizer["Zircon"]</a>
         }
         else
         {
-            <a asp-area="" asp-controller="Home" asp-action="Index" class="navbar-brand">Zircon</a>
+            <a asp-area="" asp-controller="Home" asp-action="Index" class="navbar-brand">@LayoutLocalizer["Zircon"]</a>
         }
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
@@ -35,10 +39,10 @@
 
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav mr-auto">
-                <li class="nav-item"><a asp-area="" asp-controller="Home" asp-action="Index" class="nav-link">Home</a></li>
-                <li class="nav-item"><a asp-page="/Categories/All" class="nav-link">Categories</a></li>
-                <li class="nav-item"><a asp-area="" asp-controller="Home" asp-action="About" class="nav-link">About</a></li>
-                <li class="nav-item"><a asp-area="" asp-controller="Home" asp-action="Contact" class="nav-link">Contact</a></li>
+                <li class="nav-item"><a asp-area="" asp-controller="Home" asp-action="Index" class="nav-link">@LayoutLocalizer["Home"]</a></li>
+                <li class="nav-item"><a asp-page="/Categories/All" class="nav-link">@LayoutLocalizer["Categories"]</a></li>
+                <li class="nav-item"><a asp-area="" asp-controller="Home" asp-action="About" class="nav-link">@LayoutLocalizer["About"]</a></li>
+                <li class="nav-item"><a asp-area="" asp-controller="Home" asp-action="Contact" class="nav-link">@LayoutLocalizer["Contact"]</a></li>
             </ul>
             <partial name="_LoginPartial" />
         </div>
@@ -55,6 +59,7 @@
         @RenderBody()
         <hr />
         <footer>
+            <partial name="_SelectLanguage" />
             <p>&copy; 2018 - Zircon</p>
         </footer>
     </div>
@@ -71,7 +76,6 @@
                 rootSelector: '[data-toggle=confirmation]',
             });
         </script>
-
     </environment>
     <environment exclude="Development">
         <script src="https://ajax.aspnetcdn.com/ajax/jquery/jquery-3.3.1.min.js"

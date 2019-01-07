@@ -1,10 +1,14 @@
-﻿@page 
+﻿@page
 @model Zircon.App.Pages.Categories.AllModel
+@using Microsoft.AspNetCore.Mvc.Localization
+
+@inject IViewLocalizer Localizer
+
 @{
-    ViewData["Title"] = "All Categories";
+    ViewData["Title"] = @Localizer["All Categories"];
 }
 
-<h2>All Categories</h2>
+<h2>@ViewData["Title"]</h2>
 <div class="row">
     @Html.DisplayFor(model => model.AllCategories)
 </div>

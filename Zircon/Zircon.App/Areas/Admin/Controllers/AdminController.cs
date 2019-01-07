@@ -2,10 +2,10 @@
 {
     using Microsoft.AspNetCore.Authorization;
     using Microsoft.AspNetCore.Mvc;
-    using Zircon.Common;
+    using Zircon.Common.Constrants;
 
-    [Area(Constants.AttributeConstraint.AdminArea)]
-    [Authorize(Roles = Constants.AttributeConstraint.AdminRole)]
+    [Area(AttributeConstraintsConstants.AdminArea)]
+    [Authorize(Roles = AttributeConstraintsConstants.AdminRole)]
     public abstract class AdminController : Controller
     {
     }

@@ -1,8 +1,19 @@
 ﻿@page
 @model AddModel
 @{
-    ViewData["Title"] = "Add Gift Card";
+    ViewData["Title"] = Localizer["Add Gift Card"];
 }
+@using Microsoft.AspNetCore.Mvc.Localization
+
+@inject IViewLocalizer Localizer
 
 <h2>@ViewData["Title"]</h2>
-@Html.EditorFor(model => model.AddGiftCardModel)
+<form method="post">
+    @Html.EditorFor(model => model.AddGiftCardModel)
+    <div class="form-group">
+        <div class="col-sm-10 col-sm-push-2">
+            <input type="submit" value="@Localizer["Create"]" class="btn btn-success" />
+            <a asp-area="Admin" asp-controller="Home" asp-action="Index" class="btn bg-warning btn-default">@Localizer["Cancel"]</a>
+        </div>
+    </div>
+</form>

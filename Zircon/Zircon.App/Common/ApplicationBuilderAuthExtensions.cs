@@ -3,14 +3,14 @@
     using Microsoft.AspNetCore.Builder;
     using Microsoft.AspNetCore.Identity;
     using Microsoft.Extensions.DependencyInjection;
-    using Zircon.Common;
+    using Zircon.Common.Constrants;
     using Zircon.Models;
 
     public static class ApplicationBuilderAuthExtensions
     {
         private static readonly IdentityRole[] roles =
         {
-            new IdentityRole(Constants.AttributeConstraint.AdminRole)
+            new IdentityRole(AttributeConstraintsConstants.AdminRole)
         };
 
         public static async void SeedDatabase(

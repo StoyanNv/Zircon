@@ -6,4 +6,10 @@
 <h2>@ViewData["Title"]</h2>
 <form asp-area="Admin" asp-controller="Products" asp-action="Add" method="post" class="form-horizontal">
     @Html.EditorForModel()
+    <div class="form-group">
+        <div class="col-sm-10 col-sm-push-2">
+            <input type="submit" value="Done" class="btn btn-success" />
+            <a asp-area="Admin" asp-controller="Home" asp-action="Index" class="btn bg-warning btn-default">Cancel</a>
+        </div>
+    </div>
 </form>

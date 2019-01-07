@@ -4,24 +4,29 @@
     using Microsoft.AspNetCore.Identity;
     using Microsoft.AspNetCore.Mvc;
     using Microsoft.AspNetCore.Mvc.RazorPages;
+    using Microsoft.Extensions.Localization;
     using System;
     using System.Collections.Generic;
     using System.Linq;
     using System.Threading.Tasks;
-    using Zircon.Common;
+    using Zircon.Common.Constrants;
     using Zircon.Models;
 
     public class ExternalLoginsModel : PageModel
     {
         private readonly UserManager<User> _userManager;
         private readonly SignInManager<User> _signInManager;
+        private readonly IStringLocalizer<ExternalLoginsModel> localizer;
+
 
         public ExternalLoginsModel(
             UserManager<User> userManager,
-            SignInManager<User> signInManager)
+            SignInManager<User> signInManager,
+            IStringLocalizer<ExternalLoginsModel> localizer)
         {
-            _userManager = userManager;
-            _signInManager = signInManager;
+            this.localizer = localizer;
+            this._userManager = userManager;
+            this._signInManager = signInManager;
         }
 
         public IList<UserLoginInfo> CurrentLogins { get; set; }
@@ -38,7 +43,7 @@
             var user = await _userManager.GetUserAsync(User);
             if (user == null)
             {
-                return NotFound(string.Format(Constants.ErrorMessages.UserNotFound, _userManager.GetUserId(User)));
+                return NotFound(string.Format(this.localizer[ErrorConstants.UserNotFound], _userManager.GetUserId(User)));
             }
 
             CurrentLogins = await _userManager.GetLoginsAsync(user);
@@ -46,7 +51,7 @@
                 .Where(auth => CurrentLogins.All(ul => auth.Name != ul.LoginProvider))
                 .ToList();
             ShowRemoveButton = user.PasswordHash != null || CurrentLogins.Count > 1;
-            return Page();  
+            return Page();
         }
 
         public async Task<IActionResult> OnPostRemoveLoginAsync(string loginProvider, string providerKey)
@@ -54,18 +59,18 @@
             var user = await _userManager.GetUserAsync(User);
             if (user == null)
             {
-                return NotFound(string.Format(Constants.ErrorMessages.UserNotFound, _userManager.GetUserId(User)));
+                return NotFound(string.Format(this.localizer[ErrorConstants.UserNotFound], _userManager.GetUserId(User)));
             }
 
             var result = await _userManager.RemoveLoginAsync(user, loginProvider, providerKey);
             if (!result.Succeeded)
             {
                 var userId = await _userManager.GetUserIdAsync(user);
-                throw new InvalidOperationException(string.Format(Constants.ErrorMessages.RemovingExternalLogin, userId));
+                throw new InvalidOperationException(string.Format(this.localizer[ErrorConstants.RemovingExternalLogin], userId));
             }
 
             await _signInManager.RefreshSignInAsync(user);
-            StatusMessage = Constants.SuccessMessages.ExternalLoginRemoved;
+            StatusMessage = this.localizer[SuccessConstants.ExternalLoginRemoved];
             return RedirectToPage();
         }
 
@@ -86,13 +91,13 @@
             var user = await _userManager.GetUserAsync(User);
             if (user == null)
             {
-                return NotFound(string.Format(Constants.ErrorMessages.UserNotFound, _userManager.GetUserId(User)));
+                return NotFound(string.Format(this.localizer[ErrorConstants.UserNotFound], _userManager.GetUserId(User)));
             }
 
             var info = await _signInManager.GetExternalLoginInfoAsync(await _userManager.GetUserIdAsync(user));
             if (info == null)
             {
-                throw new InvalidOperationException(string.Format(Constants.ErrorMessages.LoadingExternalLoginInfo, user.Id));
+                throw new InvalidOperationException(string.Format(this.localizer[ErrorConstants.LoadingExternalLoginInfo], user.Id));
             }
 
             var result = await _userManager.AddLoginAsync(user, info);
@@ -100,7 +105,7 @@
             {
                 if (result.Errors.First().Code == "LoginAlreadyAssociated")
                 {
-                    StatusMessage = result.Errors.First().Description;
+                    StatusMessage = this.localizer[result.Errors.First().Description];
                     return RedirectToPage();
                 }
             }
@@ -108,7 +113,7 @@
             // Clear the existing external cookie to ensure a clean login process
             await HttpContext.SignOutAsync(IdentityConstants.ExternalScheme);
 
-            StatusMessage = Constants.SuccessMessages.ExternalLoginAdded;
+            StatusMessage = this.localizer[SuccessConstants.ExternalLoginAdded];
             return RedirectToPage();
         }
     }

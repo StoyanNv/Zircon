@@ -1,8 +1,7 @@
-﻿using Zircon.Common;
-
-namespace Zircon.Services.UserServices
+﻿namespace Zircon.Services.UserServices
 {
     using AutoMapper;
+    using Common.Constrants;
     using Common.User.ViewModels;
     using Data;
     using Interfaces;

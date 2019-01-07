@@ -1,11 +1,15 @@
 ﻿@{
     Layout = "/Views/Shared/_Layout.cshtml";
+    ViewData["Title"] = @Localizer["Manage your account"];
 }
+@using Microsoft.AspNetCore.Mvc.Localization
 
-<h2>Manage your account</h2>
+@inject IViewLocalizer Localizer
+
+<h2>@ViewData["Title"]</h2>
 
 <div>
-    <h4>Change your account settings</h4>
+    <h4>@Localizer["Change your account settings"]</h4>
     <hr />
     <div class="row">
         <div class="col-md-3">

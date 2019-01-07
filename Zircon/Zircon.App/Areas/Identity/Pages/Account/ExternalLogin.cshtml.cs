@@ -5,12 +5,13 @@
     using Microsoft.AspNetCore.Identity.UI.Services;
     using Microsoft.AspNetCore.Mvc;
     using Microsoft.AspNetCore.Mvc.RazorPages;
+    using Microsoft.Extensions.Localization;
     using Microsoft.Extensions.Logging;
     using System.ComponentModel.DataAnnotations;
     using System.Security.Claims;
     using System.Text.Encodings.Web;
     using System.Threading.Tasks;
-    using Zircon.Common;
+    using Zircon.Common.Constrants;
     using Zircon.Models;
 
     [AllowAnonymous]
@@ -20,18 +21,20 @@
         private readonly UserManager<User> userManager;
         private readonly ILogger<ExternalLoginModel> logger;
         private readonly IEmailSender emailSender;
-
+        private readonly IStringLocalizer<ExternalLoginModel> localizer;
 
         public ExternalLoginModel(
             SignInManager<User> signInManager,
             UserManager<User> userManager,
             ILogger<ExternalLoginModel> logger,
-            IEmailSender emailSender)
+            IEmailSender emailSender,
+            IStringLocalizer<ExternalLoginModel> localizer)
         {
             this.signInManager = signInManager;
             this.userManager = userManager;
             this.logger = logger;
             this.emailSender = emailSender;
+            this.localizer = localizer;
         }
 
         [BindProperty]
@@ -48,17 +51,25 @@
 
         public class InputModel
         {
-            [Required]
+            [Display(Name = AttributeConstraintsConstants.NameDisplay)]
+            [Required(ErrorMessage = ErrorConstants.RequiredField)]
+            [MinLength(AttributeConstraintsConstants.NameMinLenght, ErrorMessage = ErrorConstants.FieldMinimumLength)]
             public string Name { get; set; }
-            [Required]
+
+            [Display(Name = AttributeConstraintsConstants.SurnameDisplay)]
+            [Required(ErrorMessage = ErrorConstants.RequiredField)]
+            [MinLength(AttributeConstraintsConstants.SurnameMinLenght, ErrorMessage = ErrorConstants.FieldMinimumLength)]
             public string Surname { get; set; }
 
-            [Required]
-            [Phone]
-            [MinLength(10)]
+            [Display(Name = AttributeConstraintsConstants.PhoneDisplay)]
+            [RegularExpression(Constants.PhoneRegx, ErrorMessage = ErrorConstants.InvalidPhone)]
+            [Required(ErrorMessage = ErrorConstants.RequiredField)]
+            [MinLength(AttributeConstraintsConstants.PhoneMinLenght, ErrorMessage = ErrorConstants.FieldMinimumLength)]
             public string Phone { get; set; }
-            [Required]
-            [EmailAddress]
+
+            [Display(Name = AttributeConstraintsConstants.EmailDisplay)]
+            [Required(ErrorMessage = ErrorConstants.RequiredField)]
+            [EmailAddress(ErrorMessage = ErrorConstants.InvalidEmail)]
             public string Email { get; set; }
         }
 
@@ -88,13 +99,13 @@
             returnUrl = returnUrl ?? Url.Content("~/");
             if (remoteError != null)
             {
-                ErrorMessage = string.Format(Constants.ErrorMessages.ExternalProvider, remoteError);
+                ErrorMessage = string.Format(this.localizer[ErrorConstants.ExternalProvider], remoteError);
                 return RedirectToPage("./Login", new { ReturnUrl = returnUrl });
             }
             var info = await signInManager.GetExternalLoginInfoAsync();
             if (info == null)
             {
-                ErrorMessage = Constants.ErrorMessages.ExternalLoginInformation;
+                ErrorMessage = this.localizer[ErrorConstants.ExternalLoginInformation];
                 return RedirectToPage("./Login", new { ReturnUrl = returnUrl });
             }
 
@@ -132,7 +143,7 @@
             var info = await signInManager.GetExternalLoginInfoAsync();
             if (info == null)
             {
-                ErrorMessage = Constants.ErrorMessages.ExternalLoginInformationDuringConfirmation;
+                ErrorMessage = this.localizer[ErrorConstants.ExternalLoginInformationDuringConfirmation];
                 return RedirectToPage("./Login", new { ReturnUrl = returnUrl });
             }
 
@@ -162,12 +173,19 @@
                         await emailSender.SendEmailAsync(Input.Email, "Confirm your email",
                             $"Please confirm your account by <a href='{HtmlEncoder.Default.Encode(callbackUrl)}'>clicking here</a>.");
 
-                        StatusMessage = Constants.SuccessMessages.VerificationEmailSent;
+                        StatusMessage = this.localizer[SuccessConstants.VerificationEmailSent];
                     }
                 }
                 foreach (var error in result.Errors)
                 {
-                    ModelState.AddModelError(string.Empty, error.Description);
+                    if (error.Code == "DuplicateUserName")
+                    {
+                        ModelState.AddModelError(string.Empty, string.Format(this.localizer[ErrorConstants.UserAlreadyExists], Input.Email));
+                    }
+                    else
+                    {
+                        ModelState.AddModelError(string.Empty, error.Description);
+                    }
                 }
             }
 

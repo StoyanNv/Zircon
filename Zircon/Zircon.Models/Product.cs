@@ -1,6 +1,6 @@
 ﻿namespace Zircon.Models
 {
-    using Common;
+    using Common.Constrants;
     using System.Collections.Generic;
     using System.ComponentModel.DataAnnotations;
 
@@ -21,11 +21,11 @@
         public string PictureUrl { get; set; }
 
         [Required]
-        [Range(Constants.AttributeConstraint.PriceMinValue, int.MaxValue)]
+        [Range(AttributeConstraintsConstants.PriceMinValue, int.MaxValue)]
         public decimal Price { get; set; }
 
         [Required]
-        [Range(Constants.AttributeConstraint.WeightMinValue, int.MaxValue)]
+        [Range(AttributeConstraintsConstants.WeightMinValue, int.MaxValue)]
         public double Weight { get; set; }
 
         [Required]

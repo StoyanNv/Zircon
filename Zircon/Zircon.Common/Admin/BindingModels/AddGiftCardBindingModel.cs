@@ -1,15 +1,18 @@
 ﻿namespace Zircon.Common.Admin.BindingModels
 {
+    using Constrants;
     using System.ComponentModel.DataAnnotations;
 
     public class AddGiftCardBindingModel
     {
-        [Required]
-        [MinLength(Constants.AttributeConstraint.GiftCodeMinLength, ErrorMessage = Constants.ErrorMessages.GiftCartMinimumLength)]
+        [Display(Name = AttributeConstraintsConstants.CodeDisplay)]
+        [Required(ErrorMessage = ErrorConstants.RequiredField)]
+        [MinLength(AttributeConstraintsConstants.GiftCodeMinLength, ErrorMessage = ErrorConstants.FieldMinimumLength)]
         public string Code { get; set; }
 
-        [Required(ErrorMessage = Constants.ErrorMessages.RequiredGiftCartDiscount)]
-        [Range(Constants.AttributeConstraint.GiftCodeMinDiscount, Constants.AttributeConstraint.GiftCodeMaxDiscount)]
-        public int Discount { get; set; }
+        [Display(Name = AttributeConstraintsConstants.DiscountDisplay)]
+        [Required(ErrorMessage = ErrorConstants.RequiredField)]
+        [Range(AttributeConstraintsConstants.GiftCodeMinDiscount, AttributeConstraintsConstants.GiftCodeMaxDiscount, ErrorMessage = ErrorConstants.RangeError)]
+        public int? Discount { get; set; }
     }
 }

@@ -1,0 +1,34 @@
+﻿@model IEnumerable<ShopingCartViewModel>
+@{
+    ViewData["Title"] = "Кошница";
+}
+
+<h2>@ViewData["Title"]</h2>
+
+<table class="table table-striped">
+    <thead>
+    <tr>
+        <td>Име</td>
+        <td>Цена</td>
+        <td>Премахни</td>
+    </tr>
+    </thead>
+    <tbody>
+    @Html.DisplayForModel()
+    </tbody>
+</table>
+<p>
+    Общо: @ViewData["TotalPrice"] Лв.
+</p>
+
+<form asp-controller="Cart" asp-action="FinishOrder" method="post">
+    <div class="form-inline">
+        <label for="giftCard">Код за намаление:</label>
+        &nbsp;
+        <input class="form-control" id="giftCard" name="giftCard" type="Text" />
+    </div>
+    <div class="text-right">
+        <input type="submit" value="Поръчай" class="btn-lg btn-success" />
+    </div>
+</form>
+

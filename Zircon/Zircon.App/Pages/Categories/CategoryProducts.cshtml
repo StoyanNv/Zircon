@@ -1,8 +1,10 @@
 ﻿@page "{id}"
+@using Microsoft.AspNetCore.Mvc.Localization
 @model Zircon.App.Pages.Categories.CategoryProductsModel
 @{
-    ViewData["Title"] = "Category Products";
+    ViewData["Title"] = Localizer["Products from this category"];
 }
+@inject IViewLocalizer Localizer
 
 <h2>@ViewData["Title"]</h2>
 

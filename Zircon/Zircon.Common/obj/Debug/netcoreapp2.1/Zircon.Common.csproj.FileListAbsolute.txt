@@ -10,3 +10,8 @@ C:\Zircon\Zircon\Zircon.Common\obj\Debug\netcoreapp2.1\Zircon.Common.AssemblyInf
 C:\Zircon\Zircon\Zircon.Common\obj\Debug\netcoreapp2.1\Zircon.Common.csproj.CopyComplete
 C:\Zircon\Zircon\Zircon.Common\obj\Debug\netcoreapp2.1\Zircon.Common.dll
 C:\Zircon\Zircon\Zircon.Common\obj\Debug\netcoreapp2.1\Zircon.Common.pdb
+C:\Zircon\Zircon\Zircon.Common\bin\Debug\netcoreapp2.1\Microsoft.Extensions.Localization.Abstractions.dll
+C:\Zircon\Zircon\Zircon.Common\bin\Debug\netcoreapp2.1\Microsoft.Extensions.Localization.Abstractions.xml
+C:\Zircon\Zircon\Zircon.Common\bin\Debug\netcoreapp2.1\Zircon.ResourceLibrary.dll
+C:\Zircon\Zircon\Zircon.Common\bin\Debug\netcoreapp2.1\Zircon.ResourceLibrary.pdb
+C:\Zircon\Zircon\Zircon.Common\bin\Debug\netcoreapp2.1\bg\Zircon.ResourceLibrary.resources.dll

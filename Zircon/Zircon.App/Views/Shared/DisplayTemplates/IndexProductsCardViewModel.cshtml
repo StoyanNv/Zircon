@@ -1,5 +1,7 @@
 ﻿@model IndexProductsCardViewModel
+@using Microsoft.AspNetCore.Mvc.Localization
 
+@inject IViewLocalizer Localizer
 <div class="col-sm-4" style="padding-bottom: 20px">
     <div class="card" style="width: 18rem;">
         <img class="card-img-top" src="@Model.PictureUrl" alt="@Model.Name">
@@ -7,7 +9,7 @@
             <h5 class="card-title">@Model.Name</h5>
             <p class="card-text">@Model.Price Lv.</p>
             <p class="card-text">@Model.Category</p>
-            <a asp-page="/products/details" asp-route-id="@Model.Id" class="btn btn-primary">Details</a>
+            <a asp-page="/products/details" asp-route-id="@Model.Id" class="btn btn-primary">@Localizer["Details"]</a>
         </div>
     </div>
 </div>

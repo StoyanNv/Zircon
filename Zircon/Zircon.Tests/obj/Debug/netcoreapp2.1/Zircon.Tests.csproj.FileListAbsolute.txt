@@ -21,3 +21,7 @@ C:\Zircon\Zircon\Zircon.Tests\obj\Debug\netcoreapp2.1\Zircon.Tests.AssemblyInfo.
 C:\Zircon\Zircon\Zircon.Tests\obj\Debug\netcoreapp2.1\Zircon.Tests.csproj.CopyComplete
 C:\Zircon\Zircon\Zircon.Tests\obj\Debug\netcoreapp2.1\Zircon.Tests.dll
 C:\Zircon\Zircon\Zircon.Tests\obj\Debug\netcoreapp2.1\Zircon.Tests.pdb
+C:\Zircon\Zircon\Zircon.Tests\bin\Debug\netcoreapp2.1\Zircon.ResourceLibrary.dll
+C:\Zircon\Zircon\Zircon.Tests\bin\Debug\netcoreapp2.1\Zircon.ResourceLibrary.pdb
+C:\Zircon\Zircon\Zircon.Tests\bin\Debug\netcoreapp2.1\bg\Zircon.ResourceLibrary.resources.dll
+C:\Zircon\Zircon\Zircon.Tests\bin\Debug\netcoreapp2.1\bg\Zircon.Common.resources.dll

@@ -2,13 +2,17 @@
 @{
     var hasExternalLogins = (await SignInManager.GetExternalAuthenticationSchemesAsync()).Any();
 }
+@using Microsoft.AspNetCore.Mvc.Localization
+
+@inject IViewLocalizer Localizer
+
 <ul class="list-group">
-    <li class="btn-light list-group-item  list-group-item-action @ManageNavPages.IndexNavClass(ViewContext)  "><a asp-page="./Index">Profile</a></li>
-    <li class="btn-light list-group-item list-group-item @ManageNavPages.AddressClass(ViewContext)"><a asp-page="./AddAddress">Address</a></li>
-    <li class="btn-light list-group-item list-group-item @ManageNavPages.ChangePasswordNavClass(ViewContext)"><a id="change-password" asp-page="./ChangePassword">Password</a></li>
+    <li class="btn-light list-group-item list-group-item-action @ManageNavPages.IndexNavClass(ViewContext)  "><a asp-page="./Index">@Localizer["Profile"]</a></li>
+    <li class="btn-light list-group-item list-group-item @ManageNavPages.AddressClass(ViewContext)"><a asp-page="./AddAddress">@Localizer["Address"]</a></li>
+    <li class="btn-light list-group-item list-group-item @ManageNavPages.ChangePasswordNavClass(ViewContext)"><a id="change-password" asp-page="./ChangePassword">@Localizer["Password"]</a></li>
     @if (hasExternalLogins)
     {
-        <li class="btn-light list-group-item list-group-item @ManageNavPages.ExternalLoginsNavClass(ViewContext)"><a id="external-login" asp-page="./ExternalLogins">External logins</a></li>
+        <li class="btn-light list-group-item list-group-item @ManageNavPages.ExternalLoginsNavClass(ViewContext)"><a id="external-login" asp-page="./ExternalLogins">@Localizer["External logins"]</a></li>
     }
-    <li class="btn-light list-group-item list-group-item @ManageNavPages.PersonalDataNavClass(ViewContext)"><a asp-page="./PersonalData">Personal data</a></li>
+    <li class="btn-light list-group-item list-group-item @ManageNavPages.PersonalDataNavClass(ViewContext)"><a asp-page="./PersonalData">@Localizer["Personal data"]</a></li>
 </ul>

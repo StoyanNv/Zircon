@@ -13,7 +13,9 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Zircon.Common", "Zircon.Com
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Zircon.Services", "Zircon.Services\Zircon.Services.csproj", "{064B68D8-93A3-4C3E-801C-1A4DA47FEFF3}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Zircon.Tests", "Zircon.Tests\Zircon.Tests.csproj", "{65F1168C-2A2C-42EA-9E5A-1ECF201EB5E4}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Zircon.Tests", "Zircon.Tests\Zircon.Tests.csproj", "{65F1168C-2A2C-42EA-9E5A-1ECF201EB5E4}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Zircon.ResourceLibrary", "Zircon.ResourceLibrary\Zircon.ResourceLibrary.csproj", "{149E316C-6C9F-4A1E-9309-01A001AFD9F1}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -45,6 +47,10 @@ Global
 		{65F1168C-2A2C-42EA-9E5A-1ECF201EB5E4}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{65F1168C-2A2C-42EA-9E5A-1ECF201EB5E4}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{65F1168C-2A2C-42EA-9E5A-1ECF201EB5E4}.Release|Any CPU.Build.0 = Release|Any CPU
+		{149E316C-6C9F-4A1E-9309-01A001AFD9F1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{149E316C-6C9F-4A1E-9309-01A001AFD9F1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{149E316C-6C9F-4A1E-9309-01A001AFD9F1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{149E316C-6C9F-4A1E-9309-01A001AFD9F1}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
