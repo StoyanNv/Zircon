@@ -135,7 +135,7 @@ WriteAttributeValue("", 279, Model.Name, 279, 11, false);
             WriteLiteral("</p>\r\n            ");
             EndContext();
             BeginContext(501, 106, false);
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "d234cb40841943eb9a734fd44360940f", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "c04d742353574868b03ae77d261a9ce0", async() => {
                 BeginContext(583, 20, false);
 #line 12 "C:\Zircon\Zircon\Zircon.App\Areas\Admin\Views\Shared\DisplayTemplates\IndexProductsCardViewModel.cshtml"
                                                                                         Write(Localizer["Details"]);

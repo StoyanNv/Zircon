@@ -1,30 +1,28 @@
 ﻿namespace Zircon.Tests.Services
 {
+    using AutoMapper;
     using Common.Admin.BindingModels;
     using Data;
-    using Microsoft.EntityFrameworkCore;
     using Microsoft.VisualStudio.TestTools.UnitTesting;
+    using Mocks;
     using Models;
-    using System;
     using System.Collections.Generic;
     using System.Linq;
     using System.Threading.Tasks;
     using Zircon.Services.Admin;
-    using Zircon.Services.Mapping;
     using Zircon.Services.UserServices;
 
     [TestClass]
     public class AdminProductsServiceTests
     {
         private ZirconDbContext dbContext;
+        private IMapper mapper;
 
         [TestInitialize]
         public void InitializeTests()
         {
-            var options = new DbContextOptionsBuilder<ZirconDbContext>().UseInMemoryDatabase(Guid.NewGuid().ToString()).Options;
-
-            this.dbContext = new ZirconDbContext(options);
-
+            this.dbContext = MockDbContext.GetContext();
+            this.mapper = MockAutoMapper.GetMapper();
         }
         [TestMethod]
         public async Task AdminProductsService_AddGiftCart()
@@ -32,9 +30,7 @@
             AddGiftCardBindingModel model = new AddGiftCardBindingModel() { Code = "8888", Discount = 88 };
             dbContext.SaveChanges();
 
-            AutoMapper.Mapper.Initialize(config => config.AddProfile<AutoMapperProfile>());
-
-            var service = new AdminProductsService(dbContext, AutoMapper.Mapper.Instance);
+            var service = new AdminProductsService(dbContext, this.mapper);
 
             await service.AddGiftCardAsync(model);
 
@@ -47,7 +43,7 @@
             AddCategoryBindingModel model = new AddCategoryBindingModel() { Name = "Ring" };
             dbContext.SaveChanges();
 
-            var service = new AdminProductsService(dbContext, AutoMapper.Mapper.Instance);
+            var service = new AdminProductsService(dbContext, this.mapper);
 
             await service.AddCategoryAsync(model);
 
@@ -58,7 +54,7 @@
         {
             AddAndEditProductBindingModel model = new AddAndEditProductBindingModel() { Price = 2, Name = "Ring", CategoryId = "1", PictureUrl = "https://media.tiffany.com/is/image/Tiffany/1X/20180403_CB_Necklaces_and_Pendants_Tile2_3x2Promo_US_paloma_picasso_something_to_love.jpg?v=20180322135418" };
             dbContext.SaveChanges();
-            var service = new AdminProductsService(dbContext, AutoMapper.Mapper.Instance);
+            var service = new AdminProductsService(dbContext, this.mapper);
             await service.AddProductAsync(model);
             Assert.IsNotNull(dbContext.Products.FirstOrDefault(c => c.Id == 1 && c.Name == "Ring"));
             Assert.IsNotNull(dbContext.Products.FirstOrDefault(c => c.Id == 1 && c.Name == "Ring").PictureUrl);
@@ -74,7 +70,7 @@
             });
             dbContext.SaveChanges();
 
-            var service = new CartProductService(dbContext, AutoMapper.Mapper.Instance);
+            var service = new CartProductService(dbContext, this.mapper);
             var product = await service.GetProductsAsync(1);
 
             Assert.IsNotNull(product);
@@ -99,7 +95,7 @@
             });
             dbContext.SaveChanges();
 
-            var service = new CartProductService(dbContext, AutoMapper.Mapper.Instance);
+            var service = new CartProductService(dbContext, this.mapper);
             var products = service.ConvertForShoppingCart(dbContext.Products.ToList());
 
             Assert.IsNotNull(products);
@@ -118,7 +114,7 @@
             });
             dbContext.SaveChanges();
 
-            var service = new UserProductDetailsService(dbContext, AutoMapper.Mapper.Instance);
+            var service = new UserProductDetailsService(dbContext, this.mapper);
             var product = await service.GetProductAsync(1);
 
             Assert.IsNotNull(product);
@@ -138,7 +134,7 @@
             });
             dbContext.SaveChanges();
 
-            var service = new UserProductDetailsService(dbContext, AutoMapper.Mapper.Instance);
+            var service = new UserProductDetailsService(dbContext, this.mapper);
             var product = await service.GetProductsAsync();
 
             Assert.IsNotNull(product);
@@ -159,7 +155,7 @@
             });
             dbContext.SaveChanges();
 
-            var service = new CategoriesService(dbContext, AutoMapper.Mapper.Instance);
+            var service = new CategoriesService(dbContext, this.mapper);
             var categories = await service.GetCategoriesAsync();
 
             Assert.IsNotNull(categories);
@@ -178,7 +174,7 @@
             });
             dbContext.SaveChanges();
 
-            var service = new CategoriesService(dbContext, AutoMapper.Mapper.Instance);
+            var service = new CategoriesService(dbContext, this.mapper);
             var products = await service.GetProductsAsync(1);
 
             Assert.IsNotNull(products);
@@ -195,7 +191,7 @@
             });
             dbContext.SaveChanges();
 
-            var service = new ChangeUserInfoService(dbContext, AutoMapper.Mapper.Instance);
+            var service = new ChangeUserInfoService(dbContext, this.mapper);
             await service.ChangeNameAsync("Name", "mail");
 
             Assert.IsNotNull(dbContext.Users.FirstOrDefault(u => u.Name == "Name"));

@@ -1,6 +1,4 @@
-﻿using Zircon.ResourceLibrary;
-
-namespace Zircon.App
+﻿namespace Zircon.App
 {
     using AutoMapper;
     using Common;
@@ -16,6 +14,7 @@ namespace Zircon.App
     using Microsoft.EntityFrameworkCore;
     using Microsoft.Extensions.Configuration;
     using Microsoft.Extensions.DependencyInjection;
+    using ResourceLibrary;
     using Services.Admin;
     using Services.Admin.Interfaces;
     using Services.Mapping;
@@ -37,6 +36,9 @@ namespace Zircon.App
         // This method gets called by the runtime. Use this method to add services to the container.
         public void ConfigureServices(IServiceCollection services)
         {
+            services.AddResponseCaching();
+            services.AddResponseCompression();
+
             services.AddLocalization(options => options.ResourcesPath = "Resources");
             services.Configure<RequestLocalizationOptions>(options =>
             {
@@ -99,9 +101,9 @@ namespace Zircon.App
             services.Configure<RouteOptions>(options => options.LowercaseUrls = true);
 
 
-            services.AddMvc()
+            services.AddMvc(options => options.Filters.Add(new AutoValidateAntiforgeryTokenAttribute()))
                 .AddDataAnnotationsLocalization(
-                    options => options.DataAnnotationLocalizerProvider = (type, factory) 
+                    options => options.DataAnnotationLocalizerProvider = (type, factory)
                         => factory.Create(typeof(SharedResource))
                 )
                 .AddViewLocalization(LanguageViewLocationExpanderFormat.Suffix)
@@ -115,6 +117,9 @@ namespace Zircon.App
             UserManager<User> userManager,
             RoleManager<IdentityRole> roleManager)
         {
+            app.UseResponseCaching();
+            app.UseResponseCompression();
+
             if (env.IsDevelopment())
             {
                 app.UseDeveloperExceptionPage();

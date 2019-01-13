@@ -109,7 +109,7 @@ Write(ViewData["Title"]);
             WriteLiteral("</h2>\r\n");
             EndContext();
             BeginContext(197, 412, false);
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("form", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "35ed420390ae4f40843b78bcf9dc5756", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("form", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "5e5e369fb2594828b76b80b08c1d90fc", async() => {
                 BeginContext(217, 6, true);
                 WriteLiteral("\r\n    ");
                 EndContext();
@@ -134,7 +134,7 @@ WriteAttributeValue("", 390, Localizer["Create"], 390, 20, false);
                 WriteLiteral(" class=\"btn btn-success\" />\r\n            ");
                 EndContext();
                 BeginContext(452, 120, false);
-                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "3413c30f643e41c9becf3f4195daf2f3", async() => {
+                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "9f3db716291c4fcd9b4a4e298cd1065b", async() => {
                     BeginContext(549, 19, false);
 #line 16 "C:\Zircon\Zircon\Zircon.App\Areas\Admin\Pages\GiftCards\Add.cshtml"
                                                                                                        Write(Localizer["Cancel"]);

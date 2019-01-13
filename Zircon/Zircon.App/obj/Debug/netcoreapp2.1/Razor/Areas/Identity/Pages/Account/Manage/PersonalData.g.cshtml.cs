@@ -117,7 +117,7 @@ Write(Localizer["Personal Data"]);
             WriteLiteral("</strong>\r\n        </p>\r\n        ");
             EndContext();
             BeginContext(348, 179, false);
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("form", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "7cf191f6000445deaa61f01bc659d614", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("form", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "38b3a400b56f43d488d11ee1cc9c8dac", async() => {
                 BeginContext(419, 60, true);
                 WriteLiteral("\r\n            <button class=\"btn btn-default\" type=\"submit\">");
                 EndContext();
@@ -154,7 +154,7 @@ Write(Localizer["Personal Data"]);
             WriteLiteral("\r\n        <p>\r\n            ");
             EndContext();
             BeginContext(554, 80, false);
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "1febffd9c18a4aa3bf20948dd2d2ec2c", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "f5f1ba91816b46a6926c4388e6f2f45a", async() => {
                 BeginContext(611, 19, false);
 #line 18 "C:\Zircon\Zircon\Zircon.App\Areas\Identity\Pages\Account\Manage\PersonalData.cshtml"
                                                                Write(Localizer["Delete"]);
@@ -185,7 +185,7 @@ Write(Localizer["Personal Data"]);
                 WriteLiteral("\r\n    ");
                 EndContext();
                 BeginContext(696, 44, false);
-                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("partial", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.SelfClosing, "0e08725dd27343469a729565cd6f3759", async() => {
+                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("partial", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.SelfClosing, "0cb07d2b14ef49f5abfb6d2c2a545177", async() => {
                 }
                 );
                 __Microsoft_AspNetCore_Mvc_TagHelpers_PartialTagHelper = CreateTagHelper<global::Microsoft.AspNetCore.Mvc.TagHelpers.PartialTagHelper>();

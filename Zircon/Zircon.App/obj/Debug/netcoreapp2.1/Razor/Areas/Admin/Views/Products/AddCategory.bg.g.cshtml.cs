@@ -104,7 +104,7 @@ Write(ViewData["Title"]);
             WriteLiteral("</h2>\r\n");
             EndContext();
             BeginContext(115, 452, false);
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("form", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "c4a9ecd027474efdbfa6a35dd89d1a06", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("form", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "bd619fb742bf43a0a75c146467ad9741", async() => {
                 BeginContext(227, 6, true);
                 WriteLiteral("\r\n    ");
                 EndContext();
@@ -119,7 +119,7 @@ Write(Html.EditorForModel());
                 WriteLiteral("\r\n    <div class=\"form-group\">\r\n        <div class=\"col-sm-10 col-sm-push-2\">\r\n            <input type=\"submit\" value=\"Създай\" class=\"btn btn-success\" />\r\n            ");
                 EndContext();
                 BeginContext(422, 108, false);
-                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "ebeb434fa44c4b61973dc222fe84b7ff", async() => {
+                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "e9c4b04b26de4d20948290dc269380b4", async() => {
                     BeginContext(518, 8, true);
                     WriteLiteral("Прекъсни");
                     EndContext();

@@ -202,7 +202,7 @@ WriteAttributeValue(" ", 421, Html.DisplayFor(model => model.Model.Name), 422, 4
             WriteLiteral("</h5>\r\n        ");
             EndContext();
             BeginContext(896, 108, false);
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "fdf956a8358f474d9b360bba494650cd", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "0003ab1263ff45d69eb57da3e6016722", async() => {
                 BeginContext(976, 24, false);
 #line 20 "C:\Zircon\Zircon\Zircon.App\Pages\Products\Details.cshtml"
                                                                                   Write(Localizer["Add to card"]);
@@ -240,7 +240,7 @@ WriteAttributeValue(" ", 421, Html.DisplayFor(model => model.Model.Name), 422, 4
             WriteLiteral("            ");
             EndContext();
             BeginContext(1075, 127, false);
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "2a6640f2365d491c9067b351cb877740", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "1a7ae77adece4697a6f8fe14bd6c9bb7", async() => {
                 BeginContext(1181, 17, false);
 #line 23 "C:\Zircon\Zircon\Zircon.App\Pages\Products\Details.cshtml"
                                                                                                                 Write(Localizer["Edit"]);
@@ -272,7 +272,7 @@ WriteAttributeValue(" ", 421, Html.DisplayFor(model => model.Model.Name), 422, 4
             WriteLiteral("\r\n            ");
             EndContext();
             BeginContext(1216, 159, false);
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "3a124996ca5f4448b169b7a7748f2930", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "3f42a28892954c9983c5735ca04c3647", async() => {
                 BeginContext(1352, 19, false);
 #line 24 "C:\Zircon\Zircon\Zircon.App\Pages\Products\Details.cshtml"
                                                                                                                                               Write(Localizer["Delete"]);

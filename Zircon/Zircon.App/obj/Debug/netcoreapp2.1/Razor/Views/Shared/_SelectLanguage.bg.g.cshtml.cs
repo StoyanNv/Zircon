@@ -137,12 +137,12 @@ WriteAttributeValue(" ", 604, requestCulture?.Provider?.GetType().Name, 605, 41,
             WriteLiteral(">\r\n    ");
             EndContext();
             BeginContext(654, 488, false);
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("form", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "a102f25aa6834893bf671a491cc919d8", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("form", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "f526b28b0cb2499abe8944f345d9fca2", async() => {
                 BeginContext(820, 64, true);
                 WriteLiteral("\r\n        Език:\r\n        <div class=\"form-inline\">\r\n            ");
                 EndContext();
                 BeginContext(884, 134, false);
-                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("select", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "521fee0771c644478f0328e3fc940941", async() => {
+                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("select", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "5971fd616936463d9df2dc6723d34695", async() => {
                 }
                 );
                 __Microsoft_AspNetCore_Mvc_TagHelpers_SelectTagHelper = CreateTagHelper<global::Microsoft.AspNetCore.Mvc.TagHelpers.SelectTagHelper>();

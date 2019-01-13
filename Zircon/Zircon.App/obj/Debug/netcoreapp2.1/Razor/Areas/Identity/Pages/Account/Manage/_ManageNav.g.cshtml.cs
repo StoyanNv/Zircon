@@ -105,7 +105,7 @@ WriteAttributeValue(" ", 320, ManageNavPages.IndexNavClass(ViewContext), 321, 42
             WriteLiteral(">");
             EndContext();
             BeginContext(367, 47, false);
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "640e4621bd9342aca54017cea41c431b", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "57475313d09c4c70aeba0964ad52474c", async() => {
                 BeginContext(390, 20, false);
 #line 10 "C:\Zircon\Zircon\Zircon.App\Areas\Identity\Pages\Account\Manage\_ManageNav.cshtml"
                                                                                                                                Write(Localizer["Profile"]);
@@ -144,7 +144,7 @@ WriteAttributeValue(" ", 477, ManageNavPages.AddressClass(ViewContext), 478, 41,
             WriteLiteral(">");
             EndContext();
             BeginContext(521, 52, false);
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "956a02622bbe45c29c6a765cc481ce33", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "946e10b0566d46eb82b610e47135e43d", async() => {
                 BeginContext(549, 20, false);
 #line 11 "C:\Zircon\Zircon\Zircon.App\Areas\Identity\Pages\Account\Manage\_ManageNav.cshtml"
                                                                                                                           Write(Localizer["Address"]);
@@ -183,7 +183,7 @@ WriteAttributeValue(" ", 636, ManageNavPages.ChangePasswordNavClass(ViewContext)
             WriteLiteral(">");
             EndContext();
             BeginContext(690, 78, false);
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "4c1ce99403fb4c2094eddc057141b58a", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "37e9225ae9a84f7db82bfb5e6a674771", async() => {
                 BeginContext(743, 21, false);
 #line 12 "C:\Zircon\Zircon\Zircon.App\Areas\Identity\Pages\Account\Manage\_ManageNav.cshtml"
                                                                                                                                                              Write(Localizer["Password"]);
@@ -232,7 +232,7 @@ WriteAttributeValue(" ", 871, ManageNavPages.ExternalLoginsNavClass(ViewContext)
             WriteLiteral(">");
             EndContext();
             BeginContext(925, 84, false);
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "adc7ba89ca9c4834a047e96f9f664aed", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "0cd32fb7e39a4624a9a0c43b4b97681d", async() => {
                 BeginContext(977, 28, false);
 #line 15 "C:\Zircon\Zircon\Zircon.App\Areas\Identity\Pages\Account\Manage\_ManageNav.cshtml"
                                                                                                                                                                 Write(Localizer["External logins"]);
@@ -280,7 +280,7 @@ WriteAttributeValue(" ", 1079, ManageNavPages.PersonalDataNavClass(ViewContext),
             WriteLiteral(">");
             EndContext();
             BeginContext(1131, 60, false);
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "50d0a0661f0c4cee98859a3d98b0131c", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "a30bca915a1f45bdb1a950a6e90b8734", async() => {
                 BeginContext(1161, 26, false);
 #line 17 "C:\Zircon\Zircon\Zircon.App\Areas\Identity\Pages\Account\Manage\_ManageNav.cshtml"
                                                                                                                                     Write(Localizer["Personal data"]);

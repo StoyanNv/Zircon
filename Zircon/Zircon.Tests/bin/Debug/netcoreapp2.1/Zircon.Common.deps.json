@@ -9,14 +9,16 @@
       "Zircon.Common/1.0.0": {
         "dependencies": {
           "Zircon.ResourceLibrary": "1.0.0",
-          "Microsoft.AspNetCore.Mvc.ViewFeatures": "2.1.1.0",
-          "Microsoft.Extensions.Localization.Abstractions": "2.1.1.0"
+          "Microsoft.AspNetCore.Mvc.ViewFeatures": "2.1.1.0"
         },
         "runtime": {
           "Zircon.Common.dll": {}
         }
       },
       "Zircon.ResourceLibrary/1.0.0": {
+        "dependencies": {
+          "Microsoft.Extensions.Localization.Abstractions": "2.1.1.0"
+        },
         "runtime": {
           "Zircon.ResourceLibrary.dll": {}
         },
@@ -34,7 +36,7 @@
           }
         }
       },
-      "Microsoft.Extensions.Localization.Abstractions/2.1.1.0": {
+      "Microsoft.Extensions.Localization.Abstractions.Reference/2.1.1.0": {
         "runtime": {
           "Microsoft.Extensions.Localization.Abstractions.dll": {
             "assemblyVersion": "2.1.1.0",
@@ -60,7 +62,7 @@
       "serviceable": false,
       "sha512": ""
     },
-    "Microsoft.Extensions.Localization.Abstractions/2.1.1.0": {
+    "Microsoft.Extensions.Localization.Abstractions.Reference/2.1.1.0": {
       "type": "reference",
       "serviceable": false,
       "sha512": ""

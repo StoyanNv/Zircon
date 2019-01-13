@@ -85,7 +85,7 @@ WriteAttributeValue("", 273, Model.Name, 273, 11, false);
             WriteLiteral("</h5>\r\n            ");
             EndContext();
             BeginContext(386, 124, false);
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "e22b60ec22154b708f31ad424931b94a", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "d835b1c520b44a75890bab13b23f27de", async() => {
                 BeginContext(479, 27, false);
 #line 10 "C:\Zircon\Zircon\Zircon.App\Pages\Shared\DisplayTemplates\AllCategoriesViewModel.cshtml"
                                                                                                    Write(Localizer["Go to Category"]);

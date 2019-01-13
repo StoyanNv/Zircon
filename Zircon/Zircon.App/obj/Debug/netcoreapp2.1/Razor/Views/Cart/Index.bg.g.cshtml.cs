@@ -113,7 +113,7 @@ Write(Html.DisplayForModel());
             WriteLiteral(" Лв.\r\n</p>\r\n\r\n");
             EndContext();
             BeginContext(393, 392, false);
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("form", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "6ee4115fe37c49a5876c2f523629d3b3", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("form", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "8f4b4d138a6147b98633dd2c94f223d8", async() => {
                 BeginContext(460, 318, true);
                 WriteLiteral(@"
     <div class=""form-inline"">
